@@ -6,26 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar</title>
     <style>
-        .main{
-            display: grid;
-            border: 1px solid red;
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        /* main div id selector */
+        #navbar{
             width: 100%;
-            height: 80px;
+            /* border: 1px solid red; */
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #2E3192;
+            align-items: center;
+            color: white;
         }
-        .first{
-            border: 1px solid teal;
-            width: 20%;
-            height: 50px;
+        /* for logo div */
+        #navbar>div>a>img{
+            width: 85%;
+            /* border: 1px solid teal; */
+            display: grid;
+            margin: auto;
         }
-
+        
+        .last{
+            display: flex;
+            justify-content: space-around;
+        }
     </style>
 </head>
 <body>
-    <div class="main">
-        <div class="first"></div>
-        <div class="2nd"></div>
-        <div class="3rd"></div>
-        <div class="4th"></div>
+    <div id="navbar">
+        <div>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/6RhvmV0/main-logo.png" alt="main-logo" border="0"></a>
+        </div>
+        <div>
+            <input type="search" name="search" id="search" placeholder="Enter product and / service to search">
+            <button>Search</button>
+        </div>
+        <div class="best">
+            <p>Get Best Price</p>
+        </div>
+        <!-- for shoping and all other option -->
+        <div class="last">
+            <p>Shopping</p>
+            <p>Covid Supplies</p>
+            <p>Sell</p>
+            <p>Help</p>
+            <p>Messages</p>
+            <p>Sign In</p>
+        </div>
     </div>
 </body>
 </html>
