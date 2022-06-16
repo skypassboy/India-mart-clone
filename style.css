@@ -11,7 +11,7 @@ button,a{
     cursor: pointer;
 }
 #container{
-    width: 1300px;
+    width: 95%;
     margin: auto;
     background-color: #fff;
 }
@@ -19,7 +19,6 @@ h1{
     text-align: center;
     font-weight: 700;
     font-size: 26px;
-    margin-top: 25px;
 }
 .heading{
     margin: auto;
@@ -100,11 +99,11 @@ a{
     text-decoration: none;
     color: black;
 }
-#btn1{
+.btn1{
     margin: auto;
     margin: 25px 0px;
 }
-button{
+.btn1>button{
     text-align: center;
     display: block;
     margin: auto;
@@ -116,12 +115,14 @@ button{
     border: 0.5px solid #068076 ;
     border-radius: 2px;
 }
-#btn1 button:hover{
+.btn1 button:hover{
     background-color: #068076;
     color: #fff;
 }
 /* \(￣︶￣*\))ヾ(•ω•`)o(* ￣3)Product and services part complete (❤´艸｀❤)\(￣︶￣*\))(* ￣3) */
 .rating_button{
+    display: block;
+    margin: auto;
     padding: 8px 25px;
     background-color: #fff;
     color: #2d3192;
@@ -209,6 +210,8 @@ i{
     font-size: 18px;
     font-weight: 400;
     border-radius: 3px;
+    border: 1px solid gray;
+    
 }
 .button>button>i{
     color: #068076;
@@ -216,6 +219,7 @@ i{
 .button>button:first-child{
     color: #ffff;
     background-color: #068076;
+    border: 1px solid #068076;
 }
 .button>button:first-child>i{
     color: #ffff;
@@ -239,10 +243,14 @@ i{
     font-weight: 400;
     font-size: 22px;
 }
-.input1>button{
-    margin-top: 25px;
+.input1>button{ 
     background-color: #068076;
     color: #ffff;
+    border: #015049;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px 25px;
 }
 .input1>textarea{
     width: 100%;
@@ -385,6 +393,7 @@ i{
     background-color: #00a69a;
     color: #ffff;
     font-weight: 400;
+    border: 1px solid #00a69a;
 }
 .box4{
     width: 100%;
@@ -402,6 +411,7 @@ i{
 .box5{
     border: 0.5px solid rgb(219, 218, 218);
     width: 24%;
+    margin: auto;
     border-radius: 5px;
     margin-right: 20px;
     padding: 12px;
@@ -424,7 +434,7 @@ i{
 }
 .box5_text>h1>a{
     color: #2d3192;
-    font-size: 20px;
+    font-size: 18px;
 }
 .box5_text>h1{
     margin-bottom: 25px;
@@ -446,6 +456,7 @@ i{
     color: #ffff;
     margin-bottom: 10px;
     margin-top: 10px;
+    border: 1px solid #03776d;
 }
 .box5 i{
     color: #015049;
@@ -464,8 +475,9 @@ i{
     margin-top: 20px;
 }
 .box6_part{
+    width: 390px;
+    margin: auto;
     display: flex;
-    width: 400px;
     align-items: center;
     margin-right: 12px;
     margin-bottom: 15px;
@@ -493,6 +505,7 @@ i{
 #section8 button{
     background-color: #03776d;
     color: #ffff;
+    border: #015049;
 }
 #footer{
     width: 100%;
