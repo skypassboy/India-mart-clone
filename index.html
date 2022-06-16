@@ -4,13 +4,604 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="landingPage2.css">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <style>
+        #main{
+            width: 95%;
+            /* height: 800px; */
+            /* border: 1px solid black; */
+            margin: auto;
+            background-color: white;
+        }
+        #uper{
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            margin: auto;
+        }
+      
+        #uper>img:nth-child(1){
+            margin: 10px;
+            width: 110px;
+            height: 110px;
+        }
+        #uper>img:nth-child(2){
+            /* margin: 10px; */
+            width: 700px;
+            margin-top: 26px;
+            height: 70px;
+        }
+        #call{
+            position: absolute;
+            height: 50px;
+            width: 248px;
+            font-size: 20px;
+            /* border: none; */
+            border: 1px solid green;
+            background-color: white;
+            border-radius: 4px;
+            left: 1149px;
+            top: 78px;
+        }
+        #btn{
+            /* border: 1px solid black; */
+            width: 78%;
+            margin-top: 10px;
+            margin-left:10px ;
+            background-color: rgb(234,234,244);
+            display: flex;
+        }
+        #btn>button{
+            width: 190px;
+            height: 50px;
+            font-size: 18px;
+            background-color: transparent;
+            border: none;
+        }
+        #btn>button:hover{
+            background-color: rgb(243, 242, 242);
+        }
+        #btn>button:nth-child(2){
+            width: 200px;
+        }
+        #btn>button:focus{
+            background-color: rgb(45,49,146);
+            color: white;
+        }
+       #email{
+           /* margin-left: 250px; */
+            width: 248px;
+            height: 50px;
+            font-size: 20px;
+            background-color: rgb(4,115,106);
+            color: white;
+            border: 1px solid rgb(4,115,106);
+            border-radius: 4px;
+        } 
+        #e{
+            /* border: 1px solid black; */
+            /* width: 20px; */
+            margin-top: 10px;
+            margin-left: 17px;
+        }
+        #parent1{
+            display: flex;
+            /* border: 1px solid black; */
+            margin-top: -10px;
+        
+        }
+       
+        .parent{
+            width: 90%;
+            height: 300px;
+            margin: auto;
+            /* border: 1px solid green; */
+            margin-top: 20px;
+            /* display: flex; */
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: repeat(4,1fr);
+            gap: 3px;
+            justify-content: center;
+            /* align-items: center; */
+            /* justify-content: space-evenly; */
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            /* border-radius: 4px; */
+            
+        }
+        .parent>div>img{
+            /* width: 100%; */
+            /* width: 230px; */
+            height: 260px;
+            display: grid;
+            justify-content: center;
+            margin: auto;
+            /* align-items: center; */
+            /* border: 1px solid black; */
+           /* margin-left: 100px; */
+        }
+        .child{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        #btn1{
+            position: absolute;
+            top: 330px;
+            left: 135px;
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+            border: none;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-size: 20px;
+        }
+        #btn2{
+            position: absolute;
+            top: 330px;
+            right: 135px;
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+            border: none;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-size: 20px;
+        }
+        .parent>div{
+            /* border: 1px solid black; */
+            /* width: 220px; */
 
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        .child{
+            display:none;
+            /* width: 25%; */
+        }
+        /* overlay1 */
+        .overlay1{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            /* top: 500px; */
+            width:289px;
+            bottom: 238px;
+        }
+        #c1:hover .overlay1{
+            height: 20%;
+        }
+        .overlay1>a{
+            position: absolute;
+            margin-left: 110px;
+            
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay1>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay2 */
+        .overlay2{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+            
+        }
+        #c2:hover .overlay2{
+            height: 20%;
+        }
+        .overlay2>a{
+            position: absolute;
+            margin-left: 120px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay2>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay3 */
+        .overlay3{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c3:hover .overlay3{
+            height: 20%;
+        }
+        .overlay3>a{
+            position: absolute;
+            margin-left: 95px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay3>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay4 */
+        .overlay4{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c4:hover .overlay4{
+            height: 20%;
+        }
+        .overlay4>a{
+            position: absolute;
+            margin-left: 108px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .overlay4>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay5 */
+        .overlay5{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c5:hover .overlay5{
+            height: 20%;
+        }
+        .overlay5>a{
+            position: absolute;
+            margin-left: 103px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay5>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay6 */
+        .overlay6{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c6:hover .overlay6{
+            height: 20%;
+        }
+        .overlay6>a{
+            position: absolute;
+            margin-left: 100px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay6>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay7 */
+        .overlay7{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c7:hover .overlay7{
+            height: 20%;
+        }
+        .overlay7>a{
+            position: absolute;
+            margin-left: 110px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay7>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay8 */
+        .overlay8{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c8:hover .overlay8{
+            height: 20%;
+        }
+        .overlay8>a{
+            position: absolute;
+            margin-left: 110px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay8>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        #home-ultra-main{
+            background-color: rgb(233,234,236);
+            
+        }
+        #e i{
+            position: absolute;
+            left: 1190px;
+            top: 153px;
+        }
+        #home-about{
+            border: 1px solid white;
+            width: 100%;
+            margin-top: 20px;
+            
+        }
+        #home-about>h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #home-about>h1+p{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(72, 72, 72);
+            line-height: 23px;
+        }
+        #read{
+            display: block;
+            margin: auto;
+            background-color: white;
+            border: none;
+            color: rgb(40,43,128);
+            font-weight: bold;
+        }
+        #home-lastimg{
+            width: 100%;
+        }
+        #read:hover{
+            text-decoration: underline;
+        }
+        a+button:hover{
+            text-decoration: underline;
+        }
+        .under>a:hover{
+            text-decoration: underline;
+        }
+    </style>
+   
 </head>
-<body>
-    <div id="container">
+<body onload="show()">
+<div id="home-ultra-main">
+    <div id="main">
+        <div id="uper">
+            <img src="https://3.imimg.com/data3/HJ/OY/MY-3792183/blue-heaven-cosmetics-private-limited-logo-120x120.jpg" alt="no image">
+            <img src="https://i.postimg.cc/wT48Jch3/Screenshot-331.png" alt="no img">
+            <button id="call"><i class="fi fi-sr-phone-call" style="color:green; position: absolute; left: 12px;top: 14px;"></i>Call 1234567890</button>
+            </div>
+            <div id="parent1">
+                <div id="btn">
+                    <button>Home</button>
+                    <button>Products & Services</button>
+                    <button>About Us</button>
+                    <button> Contact Us</button>
+                </div>
+                <div id="e">
+                    <button id="email"><i class="fi fi-sr-envelope"></i>Send Email</button>
+                </div>
+            </div>
+            <div class="parent" >
+               <div class="child" id="c1">
+                <img src="https://3.imimg.com/data3/US/UJ/MY-3792183/lip-balm-250x250.jpg" alt="no img">
+                <div class="overlay1 under">
+                    <a href="">Lip Balm</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div  class="child" id="c2">
+                <img src="https://3.imimg.com/data3/QC/FL/MY-3792183/fairness-scrub-250x250.jpg" alt="no img">
+                <div class="overlay2 under">
+                    <a href="">Scrub</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+              <div  class="child" id="c3">
+                <img src="https://3.imimg.com/data3/BK/MD/MY-3792183/01-250x250.jpg" alt="no img">
+                <div class="overlay3 under">
+                    <a href="">Nail Enamel</a>
+                    <button>Get Best Quote</button>
+                </div>
+              </div>
+               <div  class="child" id="c4">
+                <img style="width: 200px; height: 150px;margin-top: 50px;" src="https://3.imimg.com/data3/ML/RO/MY-3792183/mascara-250x250.jpg" alt="no img">
+                <div class="overlay4 under">
+                    <a href="">Mascara</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div class="child" id="c5">
+                <img src="https://3.imimg.com/data3/BX/CS/MY-3792183/foundation-250x250.jpg" alt="no img">
+                <div class="overlay5 under">
+                    <a href="">Foundation</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div class="child" id="c6">
+                <img src="https://3.imimg.com/data3/NL/QG/MY-3792183/fruit-bleach-250x250.jpg" alt="no img">
+                <div class="overlay6 under">
+                    <a href="">Fruit Bleach</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div class="child" id="c7">
+                <img src="https://3.imimg.com/data3/RK/XF/MY-3792183/01-250x250.jpg" alt="no img">
+                <div class="overlay7 under">
+                    <a href="">Lip Gloss</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div class="child" id="c8">
+                <img src="https://4.imimg.com/data4/QY/OX/GLADMIN-3792183/1-250x250.jpg" alt="no img">
+                <div class="overlay8 under">
+                    <a href="">Lip Stick</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+            </div>
+            <button id="btn1" onClick="moveleft()"><</button>
+            <button id="btn2" onClick="moveright()">></button>
+            <div id="home-about">
+                <h1><i class="fi fi-rr-minus"></i>About Us</h1>
+                <p>Blue Heaven Cosmetics was started in 1974 by two young brothers, company MD's Mr.Charanjit Singh and Mr. Gurnam Singh with big dreams and ambitions.<br> virtue of their determination and commitment Blue Heaven Cosmetics has been able to experience such an eventful journey revolutionizing the Indian decorative <br>cosmetics industry.</p>
+                <button id="read">+ Read More</button>
+                <img id="home-lastimg" src="https://i.postimg.cc/cJZVJkyk/Screenshot-338.png" alt="no img">
+            </div>
+        </div>
+        <div id="container">
         <div class="heading">
             <h1>Products & Services</h1>
             <hr>
@@ -119,7 +710,7 @@
         <div class="add_img">
             <img src="https://drive.google.com/uc?export=view&id=1F05QUdyTg7gCjKFrvTl-yzbpFVyXE_hD" alt="">
         </div>
-        <div class="heading">
+        <div class="heading top">
             <h1>Reviews & Rating</h1>
             <hr>
             <div class="add_img top">
@@ -539,7 +1130,47 @@
         <p>Copyright © 1996-2022 IndiaMART InterMESH Ltd. All rights reserved.</p>
         <p>Terms of Use - Privacy Policy - Link to Us</p>
        </div>
-      </div>
-<script src="script.js"></script>  
+    </div>
+    </div>
+</div>
 </body>
 </html>
+<script>
+let left=1;
+let right=4;
+    function show(){
+        for(let i=left;i<=right;i++){
+            document.getElementById("c"+i).style.display="inline-block"
+        }
+       
+    }
+
+    function moveleft(){
+       if(left<=4&&right<=7){
+        document.getElementById("c"+left).style.display="none";
+        left+=1;
+        right+=1;
+        for(let i=left;i<=right;i++){
+            document.getElementById("c"+i).style.display="inline-block"
+        }
+       }
+       else{
+        return;
+       }
+    }
+
+
+    function moveright(){
+       if(left>=1&&right>=5){
+        document.getElementById("c"+right).style.display="none";
+        left-=1;
+        right-=1;
+        for(let i=left;i<=right;i++){
+            document.getElementById("c"+i).style.display="inline-block"
+        }
+       }
+       else{
+        return;
+       }
+    }
+</script>
