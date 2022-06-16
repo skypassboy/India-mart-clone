@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Online - Latest Products @ Shop.IndiaMART.com</title>
+
+    <link rel="stylesheet" href="shopping.css">
+    <style>
+        #container{
+            width: 85%;
+            
+            margin: auto;
+        }
+        #navbar{
+            /* border: 0px 0px 1px 0px  solid ; */
+            height: 65px;
+            display: flex;
+          
+            margin-top: 21px;
+            position:fixed;
+            background-color:white;
+             top: -3px;
+            padding: 15px;
+            margin-left: -35px; 
+            margin-top: -19px;
+
+    padding: 18px 12px;
+    position: sticky;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid #C4C8CC;
+           
+          
+        }
+        #navbar>div{
+            /* border: 1px solid red; */
+            width: auto;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navbar>div:nth-child(1){
+            cursor: pointer;
+            flex-grow: 3;
+            display: flex;
+        }
+        #navbar>div:nth-child(2){
+            flex-grow: 18;
+            margin-left: 70px;
+            padding: 0px 5px;
+            border: 1px solid;
+            border-radius: 10px 0px 0px  10px;
+       
+        }
+        #navbar>div:nth-child(3){
+            cursor: pointer;
+            flex-grow: 1;
+            width: 8%;
+            margin-right: -76px;
+       
+            border-radius: 0px 10px 10px  0px;
+            /* border: 1px solid rgb(228, 23, 105) ; */
+            
+        }
+        #navbar>div:nth-child(4){
+            text-align: center;
+            cursor: pointer;
+            flex-grow: 1;
+            width: 15%;
+          
+            border-radius: 7px;
+            background-color: #2e3192;
+            margin-left: 116px;
+            display: block;
+            margin-right: -12px;
+        
+            
+        }
+        #navbar>div:nth-child(4)>p:nth-child(1){
+            cursor: pointer;
+           font-size: 16px;
+           color: white;
+           /* border: 1px solid forestgreen; */
+            
+        }
+        #navbar>div:nth-child(4)>p:nth-child(2){
+            cursor: pointer;
+           font-size: 12px;
+           color: white;
+           /* border: 1px solid red; */
+           margin-top: -13px;
+           
+            
+        }
+        
+        #navbar>div:nth-child(1)>img{
+            /* border: 1px solid darkblue; */
+    width: 46%;
+    height: 54%;
+
+}
+
+        
+        #navbar>div:nth-child(1)>p{
+            /* border: 1px solid darksalmon; */
+            font-size: 26px;
+            color: rgb(111, 123, 123);
+            margin-left: 10px;
+          
+}
+   
+#navbar>div+div{
+    /* border: 1px solid rgb(233, 122, 174); */
+    justify-content: flex-start;
+}
+
+#navbar>div+div>h4{
+    /* border: 1px solid rgb(122, 165, 233); */
+/* margin-left: 70px; */
+font-size: 18px;
+    
+}
+#navbar>div+div>input{
+    /* border: 1px solid rgb(118, 40, 14); */
+    margin-left: 70px;
+    font-size: 17px;
+    color: #928e8b;
+    border: 0;
+   
+}
+#navbar>div+div+div{
+    /* border: 1px solid red; */
+    background-color: #2a6462;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+  
+}
+#navbar>div+div+div>img{
+    /* border: 1px solid red; */
+    width:14%;
+ 
+    background-color: #2a6462; 
+    margin: 0px 10px;
+    color: wheat;
+   
+}
+#collection-items{
+    /* border: 1px solid rgb(14, 220, 127); */
+height: 110px;
+margin: 10px;
+padding: 5px;
+display: flex;
+justify-content: space-between;
+margin-top: 100px;
+
+}
+#collection-items>div{
+    /* border: 1px solid /red; */
+    width: 8%;
+    cursor: pointer;
+
+}
+#collection-items img{
+    /* border: 1px solid rgb(102, 255, 0); */
+height: 30%;
+padding: 20px;
+border-radius: 50%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+margin-left: 8px;
+text-align: center;
+
+}
+#collection-items p{
+ 
+font-size: 19px;
+text-align: center;
+
+}
+#footwear>img{
+    /* border: 1px solid rgb(13, 0, 255); */
+    width: 48%;
+}
+#collection-items+div>img{
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+/* border: 1px solid rgb(0, 255, 110); */
+margin-top: 20px;
+
+}
+#collection-items+div{
+    display: block;
+  
+}
+#collection-items+div>img+p{
+    /* border: 1px solid rgb(17, 169, 153); */
+    margin-top: -19%;
+    font-size: 35px;
+    padding-left: 50px;
+    background-size: cover;
+}
+#collection-items+div>h2{
+    /* border: 1px solid rgb(38, 0, 255); */
+    font-size: 35px;
+    padding-left: 50px;
+    margin-top: -34px;
+}
+#ladies-wear-above-div{
+margin-top: 15%;
+    /* border: 1px solid rgb(0, 255, 94); */
+     display: flex;
+   
+    height: 80px;
+    
+}
+#ladies-wear-above-div>div{
+    border: 1px  solid  rgb( 198,172, 172);
+    width: 33%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#ladies-wear-above-div img{
+
+    /* border: 1px solid red; */
+    width: 9%;
+    height: 42px;
+    margin: 0px 29px 0px -54px;
+}
+#ladies-wear-above-div h3{
+font-size: 22px;
+}
+#ladies-wear-above-div p{
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+#ladies-wear,#man-wear,#foot-wear,#cosmetics-wear,#mbl,#home-decor,#jewellery,#fertilizer,#light,#industrial-Chemicals{
+    cursor: pointer;
+    display: flex;
+}
+#ladies-wear>img,#man-wear>img,#foot-wear>img,#cosmetics-wear>img,#mbl>img,#home-decor>img,#jewellery>img,#fertilizer>img,#light>img,#industrial-Chemicals>img{
+
+    /* border: 1px solid rgb(102, 255, 0); */
+height: 30%;
+padding: 10px;
+border-radius: 50%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+margin-left: 8px;
+text-align: center;
+
+margin-top: 18px;
+
+}
+
+#ladies-wear>h3,#man-wear>h3,#foot-wear>h3,#cosmetics-wear>h3,#mbl>h3,#home-decor>h3,#jewellery>h3,#fertilizer>h3,#light>h3,#industrial-Chemicals>h3{
+    font-size: 30px;
+    margin-left: 22px;
+}
+
+
+
+
+.items{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: repeat(2,450px);
+/* border: 1px solid red; */
+gap: 20px 30px;
+padding: 5px;
+text-align: center;
+}
+.items img{
+    width: 100%;
+    height: 70%;
+}
+.items>div{
+    /* border: 1px solid forestgreen; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+
+}
+
+#ladies-wear-item,#man-wear-item,#foot-wear-item
+,#cosmetics-item,#mobile-item,#home-decor1-item,
+#artificial-jewellery-item,#light-item,#fertilizer-item,#industrial-chemicals-item{
+
+
+    display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: repeat(2,370px);
+/* border: 1px solid red; */
+gap: 20px 30px;
+padding: 5px;
+text-align: justify;
+
+}
+
+
+#ladies-wear-item>div,#man-wear-item>div,#foot-wear-item>div
+,#cosmetics-item>div,#mobile-item>div,#home-decor1-item>div,
+#artificial-jewellery-item>div,#light-item>div,#fertilizer-item>div,#industrial-chemicals-item>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    /* border: 1px solid rgb(0, 255, 55); */
+
+}
+
+#ladies-wear-item>div>p:nth-child(3),#man-wear-item>div>p:nth-child(3),#foot-wear-item>div>p:nth-child(3)
+,#cosmetics-item>div>p:nth-child(3),#mobile-item>div>p:nth-child(3),#home-decor1-item>div>p:nth-child(3),
+#artificial-jewellery-item>div>p:nth-child(3),#light-item>div>p:nth-child(3),#fertilizer-item>div>p:nth-child(3),#industrial-chemicals-item>div>p:nth-child(3){
+/* border: 1px solid red; */
+    margin-top: 15px;
+ 
+    color: rgba(4, 4, 4, 0.785);
+    margin-bottom: 30px;
+    font-size: 15px;
+  
+    font-weight: bold;
+   
+
+    /* border: 1px solid red; */
+   
+}
+#ladies-wear-item>div>p:nth-child(4),#man-wear-item>div>p:nth-child(4),#foot-wear-item>div>p:nth-child(4)
+,#cosmetics-item>div>p:nth-child(4),#mobile-item>div>p:nth-child(4),#home-decor1-item>div>p:nth-child(4),
+#artificial-jewellery-item>div>p:nth-child(4),#light-item>div>p:nth-child(4),#fertilizer-item>div>p:nth-child(4),#industrial-chemicals-item>div>p:nth-child(4){
+
+    font-size: 20px;
+   color:#2e3192;
+   margin-top: 5px;
+   text-align: justify;
+
+
+
+}
+
+
+
+
+
+
+
+
+#ladies-wear-item img,#man-wear-item img,#foot-wear-item img
+,#cosmetics-item img,#mobile-item img,#home-decor1-item img,
+#artificial-jewellery-item img,#light-item img,#fertilizer-item img,#industrial-chemicals-item img{
+
+    width: 100%;
+    height: 60%;
+
+
+}
+
+#btn{
+    /* border: 1px solid rgb(0, 255, 81); */
+    padding: 10px 40px ;
+    font-size: 20px;
+    border: 1px solid rgb(71, 66, 66);
+  
+    display: block;
+    margin: auto;
+    margin: 55px auto;
+    background-color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+.overflow-ellipsis {
+    display: block;
+  text-overflow: ellipsis;
+  max-height: 100px;
+  max-width: 190px;
+  /* border: 1px solid red; */
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+  
+
+#bottom-div{
+     
+     background-color: #232324;
+    
+     padding: 5px 20px;
+     display: flex;
+  
+     align-items: center;
+     justify-content: space-around;
+     width: 100%;
+     height: 70px;
+     grid-template-columns: 70% 30%;
+     /* border: 1px solid darkblue; */
+     margin: auto;
+     color: rgb(182, 171, 171);
+     font-size: 15px;
+     /* margin-top: 60%; */
+   }
+   #bottom-div>div:nth-child(1) {
+text-align: start;
+     /* border: 1px solid red; */
+     width:40%;
+
+   }
+   #bottom-div>div:nth-child(2) {
+display: flex;
+justify-content: space-evenly;
+/* border: 1px solid red; */
+width: 20%;
+text-align: center;
+cursor: pointer;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+<div id="navbar">
+    <div>
+        <img src="https://shop.indiamart.com/style/im_logo.jpg" alt="Logo img">
+        <p>shopping</p>
+    </div>
+    <div>
+        <h4>Shop</h4>
+        <input type="text" name="" id="search-bar" placeholder="What are you looking for?">
+    </div>
+    <div>
+       <img src="https://cdn-icons-png.flaticon.com/512/482/482631.png" alt="">
+        <p>Search</p>
+    </div>
+    <div>
+       <p>Post Bulk Requirement </p> <p>   (For large quantities) </p>
+  
+     </div>
+ 
+    
+</div>
+
+<div id="collection-items">
+<div>
+    <img src="https://shop.indiamart.com/style/ladies-wear.png" alt="collection-item-img">
+    <p>Ladies Wear</p>
+</div>
+<div>
+    <img src="https://shop.indiamart.com/style/men-wear.png" alt="collection-item-img">
+<p>Men Wear</p>
+</div>
+
+<div id="footwear">
+    <img src="https://shop.indiamart.com/style/footwear.png" alt="collection-item-img">
+<p>Footwear</p>
+</div>
+
+<div>
+    <img src="https://shop.indiamart.com/style/cosmetics.png" alt="collection-item-img">
+<p>
+  
+    Cosmetics</p>
+</div>
+<div>
+    <img src="https://shop.indiamart.com/style/mobile-accessories.png" alt="collection-item-img">
+<p>Mobile Accessories
+   
+    </p>
+</div>
+<div>
+    <img src="https://shop.indiamart.com/style/home-decor.png" alt="collection-item-img">
+<p>Home Decor</p>
+</div>
+<div>
+    <img src="https://shop.indiamart.com/style/artificial-jewellery.png" alt="collection-item-img">
+<p>Artificial Jewellery
+    
+    </p>
+</div>
+<div>
+    <img src="https://shop.indiamart.com/style/fertilizer.png" alt="collection-item-img">
+<p>Fertilizer
+   
+    </p>
+</div>
+<div>
+    <img src="https://shop.indiamart.com/style/light.png" alt="collection-item-img">
+<p> Light</p>
+</div>
+<div>
+    <img src="https://shop.indiamart.com/style/industrial-chemicals.png" alt="collection-item-img">
+<p>Industrial Chemicals</p>
+</div>
+
+
+
+</div>
+
+
+<div >
+    <img src="https://shop.indiamart.com/style/banner.jpg" alt="banner-img">
+    <p>Go Shopping for latest products</p>
+    <h2>on IndiaMART</h2>
+</div>
+<div id="ladies-wear-above-div">
+<div>
+    <img src="https://shop.indiamart.com/style/packaging.png" alt="bnr-icon">
+    <h3>600+</h3>
+    <p>Categories</p>
+</div>
+<div>
+    <img src="https://shop.indiamart.com/style/present.png" alt="bnr-icon">
+    <h3>3 Lakh+</h3>
+    <p>Products</p>
+</div>
+<div>
+    <img src="https://shop.indiamart.com/style/home-delivery.png" alt="bnr-icon">
+    <h3>Delivery</h3>
+    <p>at your doorstep</p>
+</div>
+
+</div>
+
+
+
+<div id="ladies-wear">
+    <img src="https://shop.indiamart.com/style/ladies-wear.png" alt="ladies-wear-icon">
+    <h3>Ladies Wear</h3>
+ 
+   
+ </div>
+<div id="ladies-wear-item"></div>
+<button id="btn">View More</button>
+<div id="man-wear">
+    <img src="https://shop.indiamart.com/style/men-wear.png" alt="ladies-wear-icon">
+    <h3>Man Wear</h3>
+ 
+   
+ </div>
+<div id="man-wear-item" ></div>
+<button id="btn">View More</button>
+
+
+<div id="foot-wear">
+    <img src="https://shop.indiamart.com/style/footwear.png" alt="foot-wear-icon">
+    <h3>Footwear</h3>
+</div>
+<div id="foot-wear-item"></div>
+<button id="btn">View More</button>
+
+<div id="cosmetics-wear">
+    <img src="https://shop.indiamart.com/style/cosmetics.png" alt="cosmetics-wear-icon">
+    <h3>
+        Cosmetics</h3>
+</div>
+<div id="cosmetics-item"></div>
+<div id="mbl">
+    <img src="https://shop.indiamart.com/style/mobile-accessories.png" alt="mobile-wear-icon">
+    <h3>Mobile Accessories</h3>
+
+</div>
+<div id="mobile-item"></div>
+<button id="btn">View More</button>
+
+<div id="home-decor">
+    <img src="https://shop.indiamart.com/style/home-decor.png" alt="foot-wear-icon">
+    <h3>Home Decor</h3>
+</div>
+
+<div id="home-decor1-item"> </div>
+<button id="btn">View More</button>
+
+
+<div id="jewellery">
+    <img src="https://shop.indiamart.com/style/artificial-jewellery.png" alt="foot-wear-icon">
+    <h3>Artificial Jewellery</h3>
+</div>
+<div id="artificial-jewellery-item"></div>
+
+<button id="btn">View More</button>
+
+<div id="fertilizer">
+    <img src="https://shop.indiamart.com/style/fertilizer.png" alt="foot-wear-icon">
+    <h3>Fertilizer</h3>
+</div>
+
+<div id="fertilizer-item"></div>
+<button id="btn">View More</button>
+
+<div id="light">
+    <img src="https://shop.indiamart.com/style/light.png" alt="foot-wear-icon">
+    <h3>Light</h3>
+</div>
+<div id="light-item"></div>
+<button id="btn">View More</button>
+
+<div id="industrial-Chemicals">
+    <img src="https://shop.indiamart.com/style/industrial-chemicals.png" alt="foot-wear-icon">
+    <h3>Industrial Chemicals</h3>
+</div>
+<div id="industrial-chemicals-item"></div>
+<button id="btn">View More</button>
+
+
+
+
+
+    </div>
+
+    <div id="bottom-div">
+        <div>Copyright © 1996-2022 IndiaMART. All rights reserved.</div>
+        <div>
+        <div>Home   </div>
+        <div> Terms of Use  </div>
+        <div>Privacy Policy</div>
+            </div>
+            </div>
+
+</body>
+</html>
+<script src="shopping.js">
+
+
+
+</script>
+
+
