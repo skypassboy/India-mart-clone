@@ -56,7 +56,8 @@
         position: absolute;
         top:20px;
         height: 40px;
-        left:206px
+        left:206px;
+        width:120px
  }
  #navsearch{
    
@@ -79,8 +80,9 @@
     border: 0px;
     font-size: 15px;
     border-radius: 0px 3px 3px 0px;
+    
 }
-input[type="submit"]:hover{
+#navbtn:hover{
     background-color: aqua;
 }
 
@@ -152,9 +154,30 @@ input[type="submit"]:hover{
  #i6{
     position: absolute;
     top:20px;
-    left:1280px;
+    left:1290px;
     color: white;
  }
+ #i7{
+    position: absolute;
+    top:30px;
+    left:532px;
+    color:rgb(56, 55, 55);
+ }
+ #navbtn8{
+    position: absolute;
+    top:61px;
+    display: none;
+    left:1277px;
+     /* height: 40px;
+     width:120px;  */
+     font-weight: bold;
+     font-size: 15px;
+     border: 0px;
+     color: white;
+     border-radius: 4px;
+     background: rgb(33, 33, 131); 
+ }
+ 
  #navbtn1{
     position: absolute;
     top:20px;
@@ -211,7 +234,7 @@ input[type="submit"]:hover{
  #navbtn6{
     position: absolute;
     top:42px;
-    left:1165px;
+    left:1170px;
     font-weight: bold;
     background-color: transparent;
     font-size: 15px;
@@ -299,7 +322,8 @@ input[type="submit"]:hover{
     color: black;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
  }
-.popup{
+
+ #popup{
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
@@ -309,7 +333,19 @@ input[type="submit"]:hover{
     justify-content: center;
     text-align: center;
 }
-.popupcontainar{
+
+#popup1{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+#popupcontainar{
     height: 300px;
     width: 400px;
     background: #fff;
@@ -321,39 +357,68 @@ input[type="submit"]:hover{
     border: 2px solid blue;
     
 }
-.popupcontainar>img{
+
+#popupcontainar1{
+    height: 300px;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 200px;
+    padding-top: 1px;
+    border: 2px solid blue;
+    
+}
+
+#popupcontainar>img{
 width:110px;
- /* border-radius:50%; */
- /* margin-right: 300px; */
- /* margin-bottom: 250px; */
+ 
  margin-top: -50px;
 
 }
+#popupcontainar1>img{
+    width:110px;
+ 
+ margin-top: -50px;
+
+}
+
 #popupinput{
-    margin: 20px auto ;
+    margin: 20px auto;
+border: 4px solid;
+
     display: block;
     /* margin-right:70 px; */
     width: 50%;
     padding: 10px;
     border: 1px solid rgb(37, 34, 34);
     border-radius: 5px;
+    font-family: sans-serif;
+
 }
+
+
 #submit{
     padding: 10px;
-    width:30%;
+    width:150px;
+    height: 40px;
+
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border: 0px;
-    font-weight: bold;
-
+    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+font-size: 1.1rem;
+border-radius: 5px;
 
 }
 #submit:hover{
     background-color: rgb(123, 123, 226);
 }
-.close{
-    position: absolute;
-    width: 5px;
-}
+
+
 #crossbtn{
     margin-left: 102%;
     
@@ -368,6 +433,43 @@ width:110px;
 #popuph4{
     margin-top: 10px;
 }
+/* .navflex>p{
+    display: ;
+} */
+
+#otpinput{
+    display: flex;
+    justify-content: center;
+
+}
+#otpinput>input{
+    margin: 10px;
+    height: 35px;
+    width: 65px;
+    margin-top: 20px;
+    border:px;
+    border-radius: 5px; 
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    background: #eef2f3;
+
+}
+#submit1{
+    width: 150px;
+    height: 40px;
+    margin: 25px auto 0px auto;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+}
+#popupcontainar1>h4{
+margin-top: 30px;
+}
+
     </style>
 </head>
 
@@ -378,6 +480,18 @@ width:110px;
        <select id="navchoise">
        
         <option value="city"> select Your City</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra	">Maharashtra	</option>
+        <option value="Odisha">Odisha</option>
+        <option value="West Bengal">West Bengal</option>
        </select>
        <input id="navsearch"  type="text" placeholder="Enter Product/service">
        <input id="navbtn" type="submit">
@@ -394,72 +508,106 @@ width:110px;
              
             <i id="i5" class="far fa-comments"></i>
             <button id="navbtn6">Messages</button>
-            <i id="i6" class="fas fa-user-alt"></i>          
+            <i id="i6" class="fas fa-user-alt"></i> 
+            <i id="i7" class="fa fa-search" aria-hidden="true"></i>         
     <a href="#" id="navbtn7">Sign In</a>
+    <button id="navbtn8">Verified</button>
+
        </nav>
 
     </div>
- <form id="form">
-<div class="popup">
+ 
+<div id="popup">
    
-    <div class="popupcontainar">
+    <div id="popupcontainar">
        
 <a href="#" id="crossbtn">X</a>
 <img src="User_icon.png" alt="user">
 <h4 id="popuph4">Enter Your Number Here</h4>
+<form id="form1">
  <input id="popupinput" type="text" pattern="[0-9]{10}" placeholder="91+ Enter Your Mobile No.">
  <input id="submit" type="submit" name="submit" value="submit">
+</form>
     </div>
 
 </div>
-</form>
+<div id="popup1">
+    <div id="popupcontainar1">
+        <img src="User_icon.png" alt="user">
+        <h4>ENTER OTP</h4>
+        <div id="otpinput">
+            <input type="text" id="1st" maxlength="1">
+            <input type="text" id="2nd" maxlength="1">
+            <input type="text" id="3rd" maxlength="1">
+            <input type="text" id="4th" maxlength="1">
+        </div>
+        <button id="submit1">CONFIRM</button>
+    </div>
+</div>
+
 </body>
 </html>
 <script>
+   
     document.querySelector("#navbtn7").addEventListener("click",function(){
-document.querySelector(".popup").style.display="flex"
+document.querySelector("#popup").style.display="flex"
     })
     document.querySelector("#crossbtn").addEventListener("click",function(){
-document.querySelector(".popup").style.display="none"
+document.querySelector("#popup").style.display="none"
     })
-let phonearr=JSON.parse(localStorage.getItem("usernumber")) || [];
-console.log(phonearr);
+// let array=[];
+let form=document.querySelector("#form1");
 
-document.querySelector("form").addEventListener("submit",function(){
-    let usernum=  document.querySelector("#popupinput").value;
-    if(checkphone(usernum)===true){
-        alert("yes")
-        let phoneobj={
-    personnumber:document.querySelector("#popupinput").value
+    let array= JSON.parse(localStorage.getItem("userdetail")) || [];
+
+
+form.addEventListener("submit",function(){
+    event.preventDefault();
+    personobj={
+    personnumber:form.popupinput.value,
 }
-        phonearr.push(phoneobj)
-        localStorage.setItem("usernumber",JSON.stringify(phonearr));
-    }
-    else{
-        alert("No");
-    }
+if(checknumber(personobj.personnumber)===true){
+    let userphoneno=document.querySelector("#popupinput").value;
+
+    document.getElementById("navbtn7").innerText=userphoneno;
+    document.getElementById("navbtn8").style.display="flex";
+array.push(personobj);
+localStorage.setItem("userdetail",JSON.stringify(array));
+alert("Your Number Register Successfully")
+document.querySelector("#popup").style.display="none"
+document.querySelector("#popup1").style.display="flex"
+}
+else{
+   alert ("This Number Already Register");
+    document.getElementById("navbtn7").innerText=userphoneno;
+}
+
 })
+   document.querySelector("#submit1").addEventListener("click",function(){
+    document.querySelector("#popup1").style.display="none";
+    document.getElementById("navbtn7").innerText=userphone;
+    document.getElementById("navbtn8").style.display="flex";
+    window.location.href='navbar1.html'
 
 
+})
+console.log(array)
+ function checknumber(userphone){
 
-function checkphone(usernum){
+  let fill=array.filter(function(element){
+    return userphone===element.personnumber
+  })
+  if(fill.length>0)
+  {
+    return false;
+  }
+  else{
+    return true;
+  }
+    
+ }   
+ 
 
-    for(let i=0;i<phonearr.length;i++)
-    {
-        if(phonearr[i].personnumber===usernum)
-        {
-            
-            return false;
-
-        }
-        else{
-            return true;
-        }
-    }
-  
-
-
-}
 </script>
 
 
