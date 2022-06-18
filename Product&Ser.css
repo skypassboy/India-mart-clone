@@ -81,6 +81,7 @@
             border-radius: 4px;
             transition: all 0.3s ease 0s;
             margin: 25px 15px 15px 15px;
+            float: right;
         }
         .btn::after{
             background-color: #2E3192;
@@ -136,3 +137,1012 @@
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 400;
         }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            text-decoration: none;
+        }
+        .logo>img{
+            
+               width:170px;
+               margin-top: 9px;
+               margin-right: 10px;
+               /* border-radius: 90%; */
+               /* height: 60px; */
+               /* background-color: transparent; */
+    
+        }
+        .navflax{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: space-between;
+        }
+        .navcontainer{
+        
+            width: 100%;
+            height:100px;
+            margin-bottom:-20px;
+            /* border: 1px solid red; */
+            /* background-color: blue; */
+        }
+        nav .logo{
+            padding-left: 20px;
+            margin-top: px;
+        }
+        nav{
+            
+            height: 80px;
+            background: rgb(33, 33, 131); 
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            
+        }
+        /* nav ul{
+            margin-right: 30px; 
+        } */
+        #navchoise{
+           
+            position: absolute;
+            top:20px;
+            height: 40px;
+            left:206px;
+            width:120px
+     }
+     #navsearch{
+       
+        /* margin-left:309px ; */
+        position: absolute;
+        top:20px;
+        left:326px;
+            height:36px ;
+            width: 205px;
+    
+     }
+    #navbtn{
+        position: absolute;
+        top:20px;
+        left:530px;
+        height: 40px;
+        width: 90px;
+        font-weight: bold;
+        background-color: rgb(65, 167, 167);
+        border: 0px;
+        font-size: 15px;
+        border-radius: 0px 3px 3px 0px;
+        color: white;
+    }
+    #navbtn:hover{
+        background-color:#007A6E;
+    }
+    
+    #i1:hover{
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }    
+    #i2:hover{
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    } 
+    #i3:hover{
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }  
+    #i4:hover{
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }    
+    #i5:hover{
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    } 
+    #i6:hover{
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }    
+         
+      
+        
+         
+      
+      
+    
+     
+      
+     
+    /* button{
+        background-color: transparent;
+        border: 0px;
+        color: white;
+    } */
+    
+    #i1{
+        position: absolute;
+        top:18px;
+        left:835px;
+        color: white;
+     }
+     #i2{
+      
+        position: absolute;
+        top:18px;
+        left:950px;
+        color: white;  
+     }
+     #i3{
+        position: absolute;
+        top:18px;
+        left:1050px;
+        color: white;
+     }
+     #i4{
+        position: absolute;
+        top:18px;
+        left:1110px;
+        color: white;
+     }
+     #i5{
+        position: absolute;
+        top:18px;
+        left:1190px;
+        color: white;
+     }
+     #i6{
+        position: absolute;
+        top:20px;
+        left:1290px;
+        color: white;
+     }
+     #i7{
+        position: absolute;
+        top:30px;
+        left:532px;
+        color:rgb(56, 55, 55);
+     }
+     #navbtn8{
+        position: absolute;
+        top:61px;
+        display: none;
+        left:1277px;
+         /* height: 40px;
+         width:120px;  */
+         font-weight: bold;
+         font-size: 15px;
+         border: 0px;
+         color: white;
+         border-radius: 4px;
+         background: rgb(33, 33, 131); 
+     }
+     
+     #navbtn1{
+        position: absolute;
+        top:20px;
+        left:633px;
+         height: 40px;
+         width:120px;
+         font-weight: bold;
+         font-size: 15px;
+         border: 0px;
+         color: rgb(34, 34, 151);
+         border-radius: 4px;
+     }
+     
+     #navbtn2{
+        position: absolute;
+        top:39px;
+        left:815px;
+        font-weight: bold;
+        background-color: transparent;
+        font-size: 15px;
+        border: 0px;
+        color: white;
+     }
+     #navbtn3{
+        position: absolute;
+        top:40px;
+        left:910px;
+        font-weight: bold;
+        background-color: transparent;
+        font-size: 15px;
+        border: 0px;
+        color: white;
+     }
+     #navbtn4{
+        position: absolute;
+        top:40px;
+        left:1045px;
+        font-weight: bold;
+        background-color: transparent;
+        font-size: 15px;
+        border: 0px;
+        color: white;
+     }
+     #navbtn5{
+        position: absolute;
+        top:40px;
+        left:1108px;
+        font-weight: bold;
+        background-color: transparent;
+        font-size: 15px;
+        border: 0px;
+        color: white;
+     }
+     #navbtn6{
+        position: absolute;
+        top:42px;
+        left:1170px;
+        font-weight: bold;
+        background-color: transparent;
+        font-size: 15px;
+        border: 0px;
+        color: white;
+     }
+     #navbtn7{
+        position: absolute;
+        top:42px;
+        left:1270px;
+        font-weight: bold;
+        background-color: transparent;
+        font-size: 15px;
+        border: 0px;
+        color: white;
+     }
+     
+     
+     /* #opt1{
+        background-color:transparent ;
+        margin-left: 1250px;
+        border: 0px;
+        width: 72px;
+        margin-top: 10px;
+        font-size: 15px;
+        /* line-height: 50px; 
+        font-weight:bold;
+        color:white;
+       
+          
+     } */
+     #opt1:hover{
+        /* background-color: rgb(108, 108, 224); */
+        color: black;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+     }
+     option{
+        font-size: 18px;
+        background-color: white;
+        color: rgb(77, 70, 70);
+        column-gap: 25px;
+        
+     }
+     option:hover{
+        box-shadow:  rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;;
+        
+     }
+     #navchoise{
+        font-size: 14px;
+        border-radius: 4px 0px 0px 4px;
+    
+     }
+     #navbtn1:hover{
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+     }
+     #navbtn2:hover{
+        background-color: rgb(108, 108, 224);
+        color: black;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+     }
+    
+     #navbtn3:hover{
+        background-color: rgb(108, 108, 224);
+        color: black;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+     }
+     #navbtn4:hover{
+        background-color: rgb(108, 108, 224);
+        color: black;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+     }
+     #navbtn5:hover{
+        background-color: rgb(108, 108, 224);
+        color: black;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+     }
+     #navbtn6:hover{
+        background-color: rgb(108, 108, 224);
+        color: black;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+     }
+     #navbtn7:hover{
+        background-color: rgb(108, 108, 224);
+        color: black;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+     }
+    
+     #popup{
+        background: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        display: none;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #popup1{
+        background: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        display: none;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #popupcontainar{
+        height: 300px;
+        width: 400px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        position: relative;
+        margin-top: 200px;
+        padding-top: 1px;
+        border: 2px solid blue;
+        
+    }
+    
+    #popupcontainar1{
+        height: 300px;
+        width: 400px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        position: relative;
+        margin-top: 200px;
+        padding-top: 1px;
+        border: 2px solid blue;
+        
+    }
+    
+    #popupcontainar>img{
+    width:110px;
+     
+     margin-top: -50px;
+    
+    }
+    #popupcontainar1>img{
+        width:110px;
+     
+     margin-top: -50px;
+    
+    }
+    
+    #popupinput{
+        margin: 20px auto;
+    border: 4px solid;
+    
+        display: block;
+        /* margin-right:70 px; */
+        width: 50%;
+        padding: 10px;
+        border: 1px solid rgb(37, 34, 34);
+        border-radius: 5px;
+        font-family: sans-serif;
+    
+    }
+    
+    
+    #submit{
+        padding: 10px;
+        width:150px;
+        height: 40px;
+    
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        border: 0px;
+        
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    
+    }
+    #submit:hover{
+        background-color: rgb(123, 123, 226);
+    }
+    
+    
+    #crossbtn{
+        margin-left: 102%;
+        
+        font-weight:bold ;
+        border-radius: 50%;
+        padding: 4px;
+        margin-top: -17px;
+        background-color: black;
+        color: white;
+        
+    }
+    #popuph4{
+        margin-top: 10px;
+    }
+    /* .navflex>p{
+        display: ;
+    } */
+    
+    #otpinput{
+        display: flex;
+        justify-content: center;
+    
+    }
+    #otpinput>input{
+        margin: 10px;
+        height: 35px;
+        width: 65px;
+        margin-top: 20px;
+        border:px;
+        border-radius: 5px; 
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        background: #eef2f3;
+    
+    }
+    #submit1{
+        width: 150px;
+        height: 40px;
+        margin: 25px auto 0px auto;
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+    #popupcontainar1>h4{
+    margin-top: 30px;
+    }
+    #right{
+        position: relative;
+        /* display: inline-block; */
+    }
+    #dropdown{
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 230px;
+        z-index: 1;
+        left: 1150px;
+        top: -9px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* padding: 20px; */
+        /* padding-left: 30px; */
+    }
+    #right:hover #dropdown{
+        display: block;
+    }
+    #navbtn7{
+        position: absolute;
+        left: 1272px;
+        top: -28px;
+    }
+    
+    #dropdown>div{
+        /* margin-bottom: 15px; */
+        width: 230px;
+        padding: 10px;
+    }
+    #dropdown>div:hover{
+        background-color: rgb(229, 225, 225);
+    }
+    #dropdown>div>a{
+        color: black;
+    }
+
+
+
+
+    #main{
+        width: 86%;
+        /* height: 800px; */
+        /* border: 1px solid black; */
+        margin: auto;
+        background-color: white;
+    }
+    #uper{
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        margin: auto;
+    }
+  
+    #uper>img:nth-child(1){
+        margin: 10px;
+        width: 110px;
+        height: 110px;
+    }
+    #uper>img:nth-child(2){
+        /* margin: 10px; */
+        width: 700px;
+        margin-top: 26px;
+        height: 70px;
+    }
+    #call{
+        position: absolute;
+        height: 50px;
+        width: 248px;
+        font-size: 20px;
+        /* border: none; */
+        border: 1px solid rgb(4,115,106);
+        background-color: white;
+        border-radius: 4px;
+        left: 1153px;
+        top:150px;
+    }
+    #btn{
+        /* border: 1px solid black; */
+        width: 78%;
+        margin-top: 10px;
+        margin-left:10px ;
+        background-color: rgb(234,234,244);
+        display: flex;
+    }
+    #btn>button{
+        width: 190px;
+        height: 50px;
+        font-size: 18px;
+        background-color: transparent;
+        border: none;
+    }
+    #btn>button:hover{
+        background-color: rgb(243, 242, 242);
+    }
+    #btn>button:nth-child(2){
+        width: 200px;
+    }
+    #btn>button:focus{
+        background-color: rgb(45,49,146);
+        color: white;
+    }
+   #email{
+       /* margin-left: 250px; */
+        width: 248px;
+        height: 50px;
+        font-size: 20px;
+        background-color: rgb(4,115,106);
+        color: white;
+        border: 1px solid rgb(4,115,106);
+        border-radius: 4px;
+    } 
+    #e{
+        /* border: 1px solid black; */
+        /* width: 20px; */
+        margin-top: 10px;
+        margin-left: 17px;
+    }
+    #parent1{
+        display: flex;
+        /* border: 1px solid black; */
+        margin-top: -10px;
+    
+    }
+   
+    .parent{
+        width: 90%;
+        height: 300px;
+        margin: auto;
+        /* border: 1px solid green; */
+        margin-top: 20px;
+        /* display: flex; */
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4,1fr);
+        gap: 3px;
+        justify-content: center;
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        /* border-radius: 4px; */
+        
+    }
+    .parent>div>img{
+        /* width: 100%; */
+        /* width: 230px; */
+        height: 260px;
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        /* align-items: center; */
+        /* border: 1px solid black; */
+       /* margin-left: 100px; */
+    }
+    .child{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    #btn1{
+        position: absolute;
+        top: 400px;
+        left: 135px;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        border: none;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 20px;
+    }
+    #btn2{
+        position: absolute;
+        top: 400px;
+        right: 135px;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        border: none;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 20px;
+    }
+    .parent>div{
+        /* border: 1px solid black; */
+        /* width: 220px; */
+
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    .child{
+        display:none;
+        /* width: 25%; */
+    }
+    /* overlay1 */
+    .overlay1{
+        position: absolute;
+        background-color: rgb(0, 0, 0,0.68);
+        height: 60px;
+        /* bottom: 209px; */
+        overflow: hidden;
+        transition: .5s ease;
+        /* top: 500px; */
+        width:292px;
+        bottom: 166px;
+        /* left: 200px; */
+    }
+    #c1:hover .overlay1{
+        height: 20%;
+    }
+    .overlay1>a{
+        position: absolute;
+        margin-left: 110px;
+        
+        color: white;
+        top: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .overlay1>a+button{
+       position: absolute;
+       width: 160px;
+       height: 40px;
+       border-radius: 4px;
+       background-color: white;
+       border: 1px solid white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       color: rgb(4,115,106);
+       font-weight: bold;
+       left: 65px;
+       top: 60px;
+    }
+    /* overlay2 */
+    .overlay2{
+        position: absolute;
+        background-color: rgb(0, 0, 0,0.68);
+        height: 60px;
+        bottom: 209px;
+        overflow: hidden;
+        transition: .5s ease;
+        width:292px;
+        bottom: 166px;
+        
+    }
+    #c2:hover .overlay2{
+        height: 20%;
+    }
+    .overlay2>a{
+        position: absolute;
+        margin-left: 120px;
+        color: white;
+        top: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .overlay2>a+button{
+       position: absolute;
+       width: 160px;
+       height: 40px;
+       border-radius: 4px;
+       background-color: white;
+       border: 1px solid white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       color: rgb(4,115,106);
+       font-weight: bold;
+       left: 65px;
+       top: 60px;
+    }
+    /* overlay3 */
+    .overlay3{
+        position: absolute;
+        background-color: rgb(0, 0, 0,0.68);
+        width: 232px;
+        height: 60px;
+        bottom: 209px;
+        overflow: hidden;
+        transition: .5s ease;
+        width:292px;
+        bottom: 166px;
+    }
+    #c3:hover .overlay3{
+        height: 20%;
+    }
+    .overlay3>a{
+        position: absolute;
+        margin-left: 95px;
+        color: white;
+        top: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .overlay3>a+button{
+       position: absolute;
+       width: 160px;
+       height: 40px;
+       border-radius: 4px;
+       background-color: white;
+       border: 1px solid white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       color: rgb(4,115,106);
+       font-weight: bold;
+       left: 65px;
+       top: 60px;
+    }
+    /* overlay4 */
+    .overlay4{
+        position: absolute;
+        background-color: rgb(0, 0, 0,0.68);
+        width: 232px;
+        height: 60px;
+        bottom: 209px;
+        overflow: hidden;
+        transition: .5s ease;
+        width:292px;
+        bottom: 166px;
+    }
+    #c4:hover .overlay4{
+        height: 20%;
+    }
+    .overlay4>a{
+        position: absolute;
+        margin-left: 108px;
+        color: white;
+        top: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .overlay4>a+button{
+       position: absolute;
+       width: 160px;
+       height: 40px;
+       border-radius: 4px;
+       background-color: white;
+       border: 1px solid white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       color: rgb(4,115,106);
+       font-weight: bold;
+       left: 65px;
+       top: 60px;
+    }
+    /* overlay5 */
+    .overlay5{
+        position: absolute;
+        background-color: rgb(0, 0, 0,0.68);
+        width: 232px;
+        height: 60px;
+        bottom: 209px;
+        overflow: hidden;
+        transition: .5s ease;
+        width:292px;
+        bottom: 166px;
+    }
+    #c5:hover .overlay5{
+        height: 20%;
+    }
+    .overlay5>a{
+        position: absolute;
+        margin-left: 103px;
+        color: white;
+        top: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .overlay5>a+button{
+       position: absolute;
+       width: 160px;
+       height: 40px;
+       border-radius: 4px;
+       background-color: white;
+       border: 1px solid white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       color: rgb(4,115,106);
+       font-weight: bold;
+       left: 65px;
+       top: 60px;
+    }
+    /* overlay6 */
+    .overlay6{
+        position: absolute;
+        background-color: rgb(0, 0, 0,0.68);
+        width: 232px;
+        height: 60px;
+        bottom: 209px;
+        overflow: hidden;
+        transition: .5s ease;
+        width:292px;
+        bottom: 166px;
+    }
+    #c6:hover .overlay6{
+        height: 20%;
+    }
+    .overlay6>a{
+        position: absolute;
+        margin-left: 100px;
+        color: white;
+        top: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .overlay6>a+button{
+       position: absolute;
+       width: 160px;
+       height: 40px;
+       border-radius: 4px;
+       background-color: white;
+       border: 1px solid white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       color: rgb(4,115,106);
+       font-weight: bold;
+       left: 65px;
+       top: 60px;
+    }
+    /* overlay7 */
+    .overlay7{
+        position: absolute;
+        background-color: rgb(0, 0, 0,0.68);
+        width: 232px;
+        height: 60px;
+        bottom: 209px;
+        overflow: hidden;
+        transition: .5s ease;
+        width:292px;
+        bottom: 166px;
+    }
+    #c7:hover .overlay7{
+        height: 20%;
+    }
+    .overlay7>a{
+        position: absolute;
+        margin-left: 110px;
+        color: white;
+        top: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .overlay7>a+button{
+       position: absolute;
+       width: 160px;
+       height: 40px;
+       border-radius: 4px;
+       background-color: white;
+       border: 1px solid white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       color: rgb(4,115,106);
+       font-weight: bold;
+       left: 65px;
+       top: 60px;
+    }
+    /* overlay8 */
+    .overlay8{
+        position: absolute;
+        background-color: rgb(0, 0, 0,0.68);
+        width: 232px;
+        height: 60px;
+        bottom: 209px;
+        overflow: hidden;
+        transition: .5s ease;
+        width:292px;
+        bottom: 166px;
+    }
+    #c8:hover .overlay8{
+        height: 20%;
+    }
+    .overlay8>a{
+        position: absolute;
+        margin-left: 110px;
+        color: white;
+        top: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .overlay8>a+button{
+       position: absolute;
+       width: 160px;
+       height: 40px;
+       border-radius: 4px;
+       background-color: white;
+       border: 1px solid white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 15px;
+       color: rgb(4,115,106);
+       font-weight: bold;
+       left: 65px;
+       top: 60px;
+    }
+    #home-ultra-main{
+        background-color: rgb(233,234,236);
+        
+    }
+    #e i{
+        position: absolute;
+        left: 1190px;
+        top: 153px;
+    }
+    #home-about{
+        border: 1px solid white;
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    #home-about>h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #home-about>h1+p{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(72, 72, 72);
+        line-height: 23px;
+    }
+    #read{
+        display: block;
+        margin: auto;
+        background-color: white;
+        border: none;
+        color: rgb(40,43,128);
+        font-weight: bold;
+    }
+    #home-lastimg{
+        width: 100%;
+    }
+    #read:hover{
+        text-decoration: underline;
+    }
+    a+button:hover{
+        text-decoration: underline;
+    }
+    .under>a:hover{
+        text-decoration: underline;
+    }
+    /* #abc:focus{
+        color: white;
+    } */
