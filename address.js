@@ -1,5 +1,7 @@
-let price = 349;
+let price = 1099;
 let ship = "20";
+document.getElementById("price1").innerText="₹"+ price;
+document.getElementById("price2").innerText="₹"+price;
 document.getElementById("price8").innerText="₹"+(price+Number(ship));
 document.getElementById("price6").innerText=0+"%"
 document.getElementById("price5_0").innerText="₹"+ship
@@ -8,12 +10,12 @@ let x = document.createElement("div");
 x.setAttribute("class","imagebox")
 let a = document.createElement("div");
 let image = document.createElement("img");
-image.setAttribute("src","https://cdn.shopify.com/s/files/1/0513/0125/3283/products/CC_Express_20220312_2003250.5135984147080698_small.png?v=1647096494");
+image.setAttribute("src","https://5.imimg.com/data5/ECOM/Default/2022/2/ZP/DW/XM/5444595/4-07a0cea3-4c6e-41c1-9ad5-f0bc22708fe0-1000x1000.jpg");
 let i = document.createElement("b");
 a.append(image,i);
 let b = document.createElement("div");
 let p1 = document.createElement("p");
-p1.innerText="Women's Half Sleeve Round Neck Plain T-Shirt - Lilac"
+p1.innerText=" Men Pathani Kurta Beige "
 let p2 = document.createElement("p");
 p2.innerText="L-39"
 b.append(p1,p2)

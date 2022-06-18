@@ -616,9 +616,11 @@ console.log("hello")
     for (var t = 0; t<obj.length; t++) {
       
         var div1 = document.createElement("div");
-
         var img1 = document.createElement("img");
         img1.setAttribute("src", obj[t].img);
+        let link = document.createElement("a");
+        link.setAttribute("href","productDetail.html");
+        link.append(img1)
         var name1 = document.createElement("p");
         name1.setAttribute("class","overflow-ellipsis")
         name1.innerText = obj[t].name;
@@ -627,7 +629,7 @@ console.log("hello")
         var price1 = document.createElement("p");
         price1.innerText = obj[t].price;
 
-        div1.append(img1, name1, brand, price1);
+        div1.append(link, name1, brand, price1);
 
             // div1.append(btn)
              if(i==0){
