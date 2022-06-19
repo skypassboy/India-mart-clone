@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <style>
+        #main{
+            width: 95%;
+            /* height: 800px; */
+            /* border: 1px solid black; */
+            margin: auto;
+            background-color: white;
+        }
+        #uper{
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            margin: auto;
+        }
+      
+        #uper>img:nth-child(1){
+            margin: 10px;
+            width: 110px;
+            height: 110px;
+        }
+        #uper>img:nth-child(2){
+            /* margin: 10px; */
+            width: 700px;
+            margin-top: 26px;
+            height: 70px;
+        }
+        #call{
+            position: absolute;
+            height: 50px;
+            width: 248px;
+            font-size: 20px;
+            /* border: none; */
+            border: 1px solid green;
+            background-color: white;
+            border-radius: 4px;
+            left: 1149px;
+            top: 78px;
+        }
+        #btn{
+            /* border: 1px solid black; */
+            width: 78%;
+            margin-top: 10px;
+            margin-left:10px ;
+            background-color: rgb(234,234,244);
+            display: flex;
+        }
+        #btn>button{
+            width: 190px;
+            height: 50px;
+            font-size: 18px;
+            background-color: transparent;
+            border: none;
+        }
+        #btn>button:hover{
+            background-color: rgb(243, 242, 242);
+        }
+        #btn>button:nth-child(2){
+            width: 200px;
+        }
+        #btn>button:focus{
+            background-color: rgb(45,49,146);
+            color: white;
+        }
+       #email{
+           /* margin-left: 250px; */
+            width: 248px;
+            height: 50px;
+            font-size: 20px;
+            background-color: rgb(4,115,106);
+            color: white;
+            border: 1px solid rgb(4,115,106);
+            border-radius: 4px;
+        } 
+        #e{
+            /* border: 1px solid black; */
+            /* width: 20px; */
+            margin-top: 10px;
+            margin-left: 17px;
+        }
+        #parent1{
+            display: flex;
+            /* border: 1px solid black; */
+            margin-top: -10px;
+        
+        }
+       
+        .parent{
+            width: 90%;
+            height: 300px;
+            margin: auto;
+            /* border: 1px solid green; */
+            margin-top: 20px;
+            /* display: flex; */
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: repeat(4,1fr);
+            gap: 3px;
+            justify-content: center;
+            /* align-items: center; */
+            /* justify-content: space-evenly; */
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            /* border-radius: 4px; */
+            
+        }
+        .parent>div>img{
+            /* width: 100%; */
+            /* width: 230px; */
+            height: 260px;
+            display: grid;
+            justify-content: center;
+            margin: auto;
+            /* align-items: center; */
+            /* border: 1px solid black; */
+           /* margin-left: 100px; */
+        }
+        .child{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        #btn1{
+            position: absolute;
+            top: 330px;
+            left: 135px;
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+            border: none;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-size: 20px;
+        }
+        #btn2{
+            position: absolute;
+            top: 330px;
+            right: 135px;
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+            border: none;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-size: 20px;
+        }
+        .parent>div{
+            /* border: 1px solid black; */
+            /* width: 220px; */
+
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        .child{
+            display:none;
+            /* width: 25%; */
+        }
+        /* overlay1 */
+        .overlay1{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            /* top: 500px; */
+            width:289px;
+            bottom: 238px;
+        }
+        #c1:hover .overlay1{
+            height: 20%;
+        }
+        .overlay1>a{
+            position: absolute;
+            margin-left: 110px;
+            
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay1>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay2 */
+        .overlay2{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+            
+        }
+        #c2:hover .overlay2{
+            height: 20%;
+        }
+        .overlay2>a{
+            position: absolute;
+            margin-left: 120px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay2>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay3 */
+        .overlay3{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c3:hover .overlay3{
+            height: 20%;
+        }
+        .overlay3>a{
+            position: absolute;
+            margin-left: 95px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay3>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay4 */
+        .overlay4{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c4:hover .overlay4{
+            height: 20%;
+        }
+        .overlay4>a{
+            position: absolute;
+            margin-left: 108px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .overlay4>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay5 */
+        .overlay5{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c5:hover .overlay5{
+            height: 20%;
+        }
+        .overlay5>a{
+            position: absolute;
+            margin-left: 103px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay5>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay6 */
+        .overlay6{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c6:hover .overlay6{
+            height: 20%;
+        }
+        .overlay6>a{
+            position: absolute;
+            margin-left: 100px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay6>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay7 */
+        .overlay7{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c7:hover .overlay7{
+            height: 20%;
+        }
+        .overlay7>a{
+            position: absolute;
+            margin-left: 110px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay7>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        /* overlay8 */
+        .overlay8{
+            position: absolute;
+            background-color: rgb(0, 0, 0,0.68);
+            width: 232px;
+            height: 60px;
+            bottom: 209px;
+            overflow: hidden;
+            transition: .5s ease;
+            width:289px;
+            bottom: 238px;
+        }
+        #c8:hover .overlay8{
+            height: 20%;
+        }
+        .overlay8>a{
+            position: absolute;
+            margin-left: 110px;
+            color: white;
+            top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay8>a+button{
+           position: absolute;
+           width: 160px;
+           height: 40px;
+           border-radius: 4px;
+           background-color: white;
+           border: 1px solid white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: rgb(4,115,106);
+           font-weight: bold;
+           left: 65px;
+           top: 60px;
+        }
+        #home-ultra-main{
+            background-color: rgb(233,234,236);
+            
+        }
+        #e i{
+            position: absolute;
+            left: 1190px;
+            top: 153px;
+        }
+        #home-about{
+            border: 1px solid white;
+            width: 100%;
+            margin-top: 20px;
+            
+        }
+        #home-about>h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #home-about>h1+p{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(72, 72, 72);
+            line-height: 23px;
+        }
+        #read{
+            display: block;
+            margin: auto;
+            background-color: white;
+            border: none;
+            color: rgb(40,43,128);
+            font-weight: bold;
+        }
+        #home-lastimg{
+            width: 100%;
+        }
+        #read:hover{
+            text-decoration: underline;
+        }
+        a+button:hover{
+            text-decoration: underline;
+        }
+        .under>a:hover{
+            text-decoration: underline;
+        }
+    </style>
+   
+</head>
+<body onload="show()">
+<div id="home-ultra-main">
+    <div id="main">
+        <div id="uper">
+            <img src="https://3.imimg.com/data3/HJ/OY/MY-3792183/blue-heaven-cosmetics-private-limited-logo-120x120.jpg" alt="no image">
+            <img src="https://i.postimg.cc/wT48Jch3/Screenshot-331.png" alt="no img">
+            <button id="call"><i class="fi fi-sr-phone-call" style="color:green; position: absolute; left: 12px;top: 14px;"></i>Call 1234567890</button>
+            </div>
+            <div id="parent1">
+                <div id="btn">
+                    <button>Home</button>
+                    <button>Products & Services</button>
+                    <button>About Us</button>
+                    <button> Contact Us</button>
+                </div>
+                <div id="e">
+                    <button id="email"><i class="fi fi-sr-envelope"></i>Send Email</button>
+                </div>
+            </div>
+            <div class="parent" >
+               <div class="child" id="c1">
+                <img src="https://3.imimg.com/data3/US/UJ/MY-3792183/lip-balm-250x250.jpg" alt="no img">
+                <div class="overlay1 under">
+                    <a href="">Lip Balm</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div  class="child" id="c2">
+                <img src="https://3.imimg.com/data3/QC/FL/MY-3792183/fairness-scrub-250x250.jpg" alt="no img">
+                <div class="overlay2 under">
+                    <a href="">Scrub</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+              <div  class="child" id="c3">
+                <img src="https://3.imimg.com/data3/BK/MD/MY-3792183/01-250x250.jpg" alt="no img">
+                <div class="overlay3 under">
+                    <a href="">Nail Enamel</a>
+                    <button>Get Best Quote</button>
+                </div>
+              </div>
+               <div  class="child" id="c4">
+                <img style="width: 200px; height: 150px;margin-top: 50px;" src="https://3.imimg.com/data3/ML/RO/MY-3792183/mascara-250x250.jpg" alt="no img">
+                <div class="overlay4 under">
+                    <a href="">Mascara</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div class="child" id="c5">
+                <img src="https://3.imimg.com/data3/BX/CS/MY-3792183/foundation-250x250.jpg" alt="no img">
+                <div class="overlay5 under">
+                    <a href="">Foundation</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div class="child" id="c6">
+                <img src="https://3.imimg.com/data3/NL/QG/MY-3792183/fruit-bleach-250x250.jpg" alt="no img">
+                <div class="overlay6 under">
+                    <a href="">Fruit Bleach</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div class="child" id="c7">
+                <img src="https://3.imimg.com/data3/RK/XF/MY-3792183/01-250x250.jpg" alt="no img">
+                <div class="overlay7 under">
+                    <a href="">Lip Gloss</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+               <div class="child" id="c8">
+                <img src="https://4.imimg.com/data4/QY/OX/GLADMIN-3792183/1-250x250.jpg" alt="no img">
+                <div class="overlay8 under">
+                    <a href="">Lip Stick</a>
+                    <button>Get Best Quote</button>
+                </div>
+               </div>
+            </div>
+            <button id="btn1" onClick="moveleft()"><</button>
+            <button id="btn2" onClick="moveright()">></button>
+            <div id="home-about">
+                <h1><i class="fi fi-rr-minus"></i>About Us</h1>
+                <p>Blue Heaven Cosmetics was started in 1974 by two young brothers, company MD's Mr.Charanjit Singh and Mr. Gurnam Singh with big dreams and ambitions.<br> virtue of their determination and commitment Blue Heaven Cosmetics has been able to experience such an eventful journey revolutionizing the Indian decorative <br>cosmetics industry.</p>
+                <button id="read">+ Read More</button>
+                <img id="home-lastimg" src="https://i.postimg.cc/cJZVJkyk/Screenshot-338.png" alt="no img">
+            </div>
+        </div>
+        <div id="container">
+        <div class="heading">
+            <h1>Products & Services</h1>
+            <hr>
+        </div>
+        <div id="section1">
+            <div class="content">
+                <div class="img_part">
+                    <img src="https://3.imimg.com/data3/BX/CS/MY-3792183/foundation-250x250.jpg" alt="">
+                </div>
+                <div class="box">
+                <h1><a href="#">Makeup</a></h1>
+                <p><a href="">Foundation</a></p>
+                <p><a href="">Compact</a></p>
+                <p><a href="">Pan cake Foundation</a></p>
+                <p><a href="">view Details ></a></p>
+            </div>
+            </div>
+            <div class="content">
+                <div class="img_part">
+                    <img src="https://4.imimg.com/data4/QY/OX/GLADMIN-3792183/1-250x250.jpg" alt="">
+                </div>
+                <div class="box">
+                <h1><a href="#">Lipstick</a></h1>
+                <p><a href="">Baked Brick Lipstick</a></p>
+                <p><a href="">Cerise Pink Lipstick</a></p>
+                <p><a href="">Coral Red Lipstick</a></p>
+                <p><a href="">view Details ></a></p>
+            </div>
+            </div>
+            <div class="content">
+                <div class="img_part">
+                    <img src="https://3.imimg.com/data3/RK/XF/MY-3792183/01-250x250.jpg" alt="">
+                </div>
+                <div class="box">
+                <h1><a href="#">Lips Products</a></h1>
+                <p><a href="">Lip Gloss</a></p>
+                <p><a href="">Lip Stick</a></p>
+                <p><a href="">Lip Liner</a></p>
+                <p><a href="">view Details ></a></p>
+            </div>
+            </div>
+            <div class="content">
+                <div class="img_part">
+                    <img src="https://3.imimg.com/data3/NL/QG/MY-3792183/fruit-bleach-250x250.jpg" alt="">
+                </div>
+                <div class="box">
+                <h1><a href="#">Bleach Cream</a></h1>
+                <p><a href="">Fruit Bleach</a></p>
+                <p><a href="">Gold Bleach</a></p>
+                <p><a href="">Personal Bleach</a></p>
+                <p><a href="">view Details ></a></p>
+            </div>
+            </div>
+            <div class="content">
+                <div class="img_part">
+                    <img src="https://3.imimg.com/data3/QC/FL/MY-3792183/fairness-scrub-250x250.jpg" alt="">
+                </div>
+                <div class="box">
+                <h1><a href="#">Scurbs</a></h1>
+                <p><a href="">Fairness Scrub</a></p>
+                <p><a href="">Mix Fruit Scrub</a></p>
+                <p><a href="">Facial Scrub - Walnut & apricot</a></p>
+                <p><a href="">view Details ></a></p>
+            </div>
+            </div>
+            <div class="content">
+                <div class="img_part">
+                    <img src="https://3.imimg.com/data3/ML/RO/MY-3792183/mascara-250x250.jpg" alt="">
+                </div>
+                <div class="box">
+                <h1><a href="#">Eyes Products</a></h1>
+                <p><a href="">Mascara</a></p>
+                <p><a href="">Eye Shadow</a></p>
+                <p><a href="">Eye Liner</a></p>
+                <p><a href="">view Details ></a></p>
+            </div>
+            </div>
+            <div class="content">
+                <div class="img_part">
+                    <img src="https://3.imimg.com/data3/US/UJ/MY-3792183/lip-balm-250x250.jpg" alt="">
+                </div>
+                <div class="box">
+                <h1><a href="#">LipCare</a></h1>
+                <p><a href="">Lip Balm</a></p>
+                <p><a href="">Lip Gaurd</a></p>
+                <p style="color: #fff;">gfg</p>
+                <p><a href="">view Details ></a></p>
+            </div>
+            </div>
+            <div class="content">
+                <div class="img_part">
+                    <img src="https://3.imimg.com/data3/WJ/EO/MY-3792183/01-250x250.jpg" alt="">
+                </div>
+                <div class="box">
+                <h1><a href="#">Traditional Items</a></h1>
+                <p><a href="">Sindoor</a></p>
+                <p><a href="">Kajal</a></p>
+                <p style="color: #fff;">gfg</p>
+                <p><a href="">view Details ></a></p>
+            </div>
+            </div>
+        </div> 
+        <div class="btn1">
+            <button>View Complete Range</button>
+        </div>
+        <div class="add_img">
+            <img src="https://drive.google.com/uc?export=view&id=1F05QUdyTg7gCjKFrvTl-yzbpFVyXE_hD" alt="">
+        </div>
+        <div class="heading top">
+            <h1>Reviews & Rating</h1>
+            <hr>
+            <div class="add_img top">
+                <img src="https://drive.google.com/uc?export=view&id=17xCYGJBtPRqcWouAbn6Dybn3czA15eVP" alt="">
+            </div>
+            <button class="rating_button">View more Reviews</button>
+        </div>
+        <!-- reviews part goes here -->
+
+        <div class="section3">
+            <div class="heading2">
+                <h1>Get in touch with Us</h1>
+            </div>
+            <div class="details">
+                <div id="details1">
+                    <div id="first">
+                        <h2>Our Company</h2>
+                        <p>About Us</p>
+                        <p>Products & Services</p>
+                        <p>Contact Us</p>
+                        <p>Site Map</p>
+                        <p>Download Brochure</p>
+                    </div>
+                    <div id="second">
+                        <h2>Reach Us</h2>
+                       <h3> <i class="fi fi-sr-marker"></i>Blue Heaven Cosmetics (P) Ltd</h3> 
+                       <p class="para">No. 39, DLF Industrial Area, Kirti Nagar, New Delhi-110019, Delhi, India</p>
+                       <p class="para1"><i class="fi fi-sr-redo"></i><a href="#"> Get Direction</a></p>
+                       <p class="title"><i class="fi fi-sr-user"></i> Arvind Srivastava (Manager)</p>
+                       <p class="title"><i class="fi fi-sr-phone-call"></i>Call 08048361220</p>
+                       <p class="para">Dial Ext 167 when connected</p>
+                       <div class="button">
+                        <button><i class="fi fi-sr-comment-alt"></i>Send SMS</button>
+                        <button><i class="fi fi-sr-envelope-open"></i>Send Email</button>
+                       </div>
+                  </div>
+                  <div class="third">
+                    <i class="fi fi-sr-share"></i>
+                    <p>Share Via Us</p>
+                    <div class="img1">
+                        <img src="https://flyclipart.com/thumb2/social-media-facebook-circle-icon-free-of-social-media-744746.png" width="45px" alt="">
+                    </div>
+                    <div class="img1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" width="30px" alt="">
+                    </div> 
+                    <div class="img1">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" width="30px" alt="">
+                    </div> 
+                  </div>
+            </div>
+                <div class="input1">
+                  <h2><b> Leave a Message</b>, We will Call you Back</h2>  
+                  <p>Requirement Details</p>
+                  <textarea name="" id="" placeholder="Additional Details about Your Requirements..."></textarea>
+                  <button>Submit Requirement</button>
+            </div>
+            </div>
+            </div>
+            <div id="section4">
+                <h2>Ready to Ship Products in Similar Categories</h2>
+                <div class="box1">
+                    <div class="box2">
+                        <div class="box2_img">
+                            <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/UU/PA/IS/9422220/hair-nose-lip-3-color-single-lipstick-moisturizing-color-waterproof-temptation-of-angels-222-500x500.jpg" alt="">
+                        </div>
+                       <div class="box2_text">
+                        <p class="box2_p">3-color single lipstick...</p>
+                        <p class="box2_price">₹ 1,499 / Unit</p>
+                        <button>Buy Now</button>
+                        <p>My online collection store</p>
+                       </div>
+                    </div>
+                    <div class="box2">
+                        <div class="box2_img">
+                            <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/BU/RG/AT/40991549/exxaggerate-500x500.jpg" alt="">
+                        </div>
+                       <div class="box2_text">
+                        <p class="box2_p">Sleek true Color lipstick...</p>
+                        <p class="box2_price">₹ 499</p>
+                        <button>Buy Now</button>
+                        <p>Jarms Exim Private Limited</p>
+                       </div>
+                    </div>
+                    <div class="box2">
+                        <div class="box2_img">
+                            <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/OV/MA/BH/112041886/jpg-20220424-122355-0000-500x500.jpg" alt="">
+                        </div>
+                       <div class="box2_text">
+                        <p class="box2_p">natural and Chemical Free...</p>
+                        <p class="box2_price">₹ 450</p>
+                        <button>Buy Now</button>
+                        <p>Mavashivaa - Golden Traders</p>
+                       </div>
+                    </div>
+                    <div class="box2">
+                        <div class="box2_img">
+                            <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/ON/MS/OR/61819412/florallips2-500x500.jpg" alt="">
+                        </div>
+                       <div class="box2_text">
+                        <p class="box2_p">Floral Lips...</p>
+                        <p style="color:#f6f6f6">dfwdf</p>
+                        <p class="box2_price">₹ 699</p>
+                        <button>Buy Now</button>
+                        <p>Artist Space</p>
+                       </div>
+                    </div>
+                    <div class="box2">
+                        <div class="box2_img">
+                            <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/EP/OO/CJ/65058394/h2c244c67301f4fbd8f4a53e4689c4c3eh-500x500.png" alt="">
+                        </div>
+                       <div class="box2_text">
+                        <p class="box2_p">5 in 1 Lipstick combination...</p>
+                        <p class="box2_price">₹ 499</p>
+                        <button>Buy Now</button>
+                        <p>TRENDY FASHION HUB</p>
+                       </div>
+                    </div>
+                    <div class="box2">
+                        <div class="box2_img">
+                            <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/OE/VJ/NN/115008779/1573120945484-missrose2in1redlipstick-originnm80prcnt-500x500.jpg" alt="">
+                        </div>
+                       <div class="box2_text">
+                        <p class="box2_p">Miss Rose 2-in-1 Red lipstick</p>
+                        <p class="box2_price">₹ 363</p>
+                        <button>Buy Now</button>
+                        <p>Chutaki Online Store</p>
+                       </div>
+                    </div>
+                    <div class="box2">
+                        <div class="box2_img">
+                            <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/OH/AG/TF/147540438/product-image-1848074476-500x500.jpg" alt="">
+                        </div>
+                       <div class="box2_text">
+                        <p class="box2_p">Handaiyan matte Liquid lipstick</p>
+                        <p class="box2_price">₹ 245</p>
+                        <button>Buy Now</button>
+                        <p>Aadhyacollections</p>
+                       </div>
+                    </div>
+                    <div class="box2">
+                        <div class="box2_img">
+                            <img src="https://5.imimg.com/data5/ECOM/Default/2022/2/JV/SQ/JD/11390531/lipstick-sonal-swatch-500x500.png" alt="">
+                        </div>
+                       <div class="box2_text">
+                        <p class="box2_p">Paul Penders hand Made...</p>
+                        <p class="box2_price">₹ 650</p>
+                        <button>Buy Now</button>
+                        <p>Garima Collection</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section5">
+                <div class="box3">
+                    <h2>Tell us what you need, and we'll help you get quotes</h2>
+                   <div>
+                    <div><p>I want quotes for</p></div>
+                    <div><input type="text" placeholder="Cosmetics, Hair & Beauty Products"></div>
+                   </div>
+                   <div>
+                    <div><p>Quantity</p></div>
+                    <div class="input2"><input type="text" placeholder="">
+                        <input type="text" placeholder="Piece"></div>
+                   </div>
+                   <div>
+                    <div><p>Briefly describe your requirement</p></div>
+                    <div><textarea name="" id="" cols="30" rows="10" placeholder="Additional Details about Your Requirements..."></textarea></div>
+                   </div>
+                   <div class="button_submit">
+                    <button>Submit Requirement</button>
+                   </div> 
+                </div>
+            </div>
+            <div id="section6">
+                <h2>Related Products from Top Suppliers</h2>
+                <div class="box4">
+                    <div class="box5">
+                        <div class="box5_img">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/IB/TX/TW/52181736/miss-rose-pink-lipstick-250x250.jpeg" alt="">
+                        </div>
+                       <div class="box5_text">
+                        <h1><a href="#">Miss Rose Pink Lipstick</a></h1>
+                        <p class="box5_price">Rs 55/ Piece</p>
+                        <p> Cosmetic World</p>
+                        <p class="address">New Delhi, Delhi, India</p>
+                        <p><i class="fi fi-sr-phone-call"></i>Call 07942554198</p>
+                        <button>Contact Supplier</button>
+                       </div>
+                    </div>
+                    <div class="box5">
+                        <div class="box5_img">
+                            <img src="https://5.imimg.com/data5/IOS/Default/2021/7/MC/PE/YH/15721794/product-jpeg-250x250.png" alt="">
+                        </div>
+                       <div class="box5_text">
+                        <h1><a href="#">Hillary Rhoda Lipstick</a></h1>
+                        <p class="box5_price"> Rs 480/ Box</p>
+                        <p> Anjali Enterprises</p>
+                        <p class="address">New Delhi, Delhi, India</p>
+                        <p><i class="fi fi-sr-phone-call"></i>Call 08047641953</p>
+                        <button>Contact Supplier</button>
+                       </div>
+                    </div>
+                    <div class="box5">
+                        <div class="box5_img">
+                            <img src="https://5.imimg.com/data5/VD/UP/MY-19466517/janie-orange-lipstick-250x250.jpg" alt="">
+                        </div>
+                       <div class="box5_text">
+                        <h1><a href="#">Janie Orange Lipstick</a></h1>
+                        <p class="box5_price">Rs 50/ Piece</p>
+                        <p> Bravo International</p>
+                        <p class="address">Bawana, Delhi, India</p>
+                        <p><i class="fi fi-sr-phone-call"></i>Call 08048955435</p>
+                        <button>Contact Supplier</button>
+                       </div>
+                    </div>
+                    <div class="box5">
+                        <div class="box5_img">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/2/QI/PC/IQ/39790472/image-asset-250x250.jpeg" alt="">
+                        </div>
+                       <div class="box5_text">
+                        <h1><a href="#">Melt Green Lipsticks</a></h1>
+                        <p class="box5_price">Rs 60/ Piece</p>
+                        <p>  Chandani & Sons</p>
+                        <p class="address">Delhi, India</p>
+                        <p><i class="fi fi-sr-phone-call"></i>Call 08046055962</p>
+                        <button>Contact Supplier</button>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add_img top">
+                <img src="https://drive.google.com/uc?export=view&id=1RqfDXqPQ9dd1XN5t5prQ3amwYYmY9aMz" alt="">
+            </div>
+            <div id="section7">
+                <h2>Related Categories</h2>
+                <div class="box6">
+                    <div class="box6_part">
+                        <div class="box6_img">
+                            <img src="https://3.imimg.com/data3/EP/VJ/GLADMIN-105850/cosmetics-250x250.jpg" alt="">
+                        </div>
+                        <div class="box6_para">
+                            <p>Cosmetics</p>
+                        </div>
+                    </div>
+                    <div class="box6_part">
+                        <div class="box6_img">
+                            <img src="https://5.imimg.com/data5/JM/OT/KQ/GLADMIN-68087/cosmetic-third-party-manufacturing-250x250.jpg" alt="">
+                        </div>
+                        <div class="box6_para">
+                            <p>Cosmetic Third Party Manufacturing</p>
+                        </div>
+                    </div>
+                    <div class="box6_part">
+                        <div class="box6_img">
+                            <img src="https://3.imimg.com/data3/TT/GW/GLADMIN-21908/beauty-cosmetics-250x250.jpg" alt="">
+                        </div>
+                        <div class="box6_para">
+                            <p>Beauty Cosmetics</p>
+                        </div>
+                    </div>
+                    <div class="box6_part">
+                        <div class="box6_img">
+                            <img src="https://5.imimg.com/data5/ZB/JY/DJ/GLADMIN-68087/matte-lipstick-250x250.png" alt="">
+                        </div>
+                        <div class="box6_para">
+                            <p>Matte Lipstick</p>
+                        </div>
+                    </div>
+                    <div class="box6_part">
+                        <div class="box6_img">
+                            <img src="https://3.imimg.com/data3/KG/HH/GLADMIN-11601/lip-balm-250x250.jpg" alt="">
+                        </div>
+                        <div class="box6_para">
+                            <p>Lip Balm</p>
+                        </div>
+                    </div>
+                    <div class="box6_part">
+                        <div class="box6_img">
+                            <img src="https://3.imimg.com/data3/IF/CY/GLADMIN-108453/liquid-lipstick-250x250.jpg" alt="">
+                        </div>
+                        <div class="box6_para">
+                            <p>Liquid Lipstick</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="section8">
+                <h2>Featured Recommendations</h2>
+                <div class="box4">
+                    <div class="box5">
+                        <div class="box5_img">
+                            <img src="https://5.imimg.com/data5/IOS/Default/2021/5/DO/QV/VD/2369761/product-jpeg-250x250.png" alt="">
+                        </div>
+                       <div class="box5_text">
+                        <h1><a href="#">Medical Oxygen Cylinder</a></h1>
+                        <p class="box5_price">Rs 14999/ Piece</p>
+                        <p>Uflow Automation</p>
+                        <p class="address">Rajkot, Gujarat</p>
+                        <p style="color:#fff;">fdf</p>
+                        <button>Contact Supplier</button>
+                       </div>
+                    </div>
+                    <div class="box5">
+                        <div class="box5_img">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/6/BO/BA/ZM/1384445/oxygen-gas-250x250.jpg" alt="">
+                        </div>
+                       <div class="box5_text">
+                        <h1><a href="#">Oxygen Cylinder</a></h1>
+                        <p class="box5_price"> Rs 6000/ Cylinder</p>
+                        <p> Delhi Cryogenic Products Private Limited</p>
+                        <p class="address">New Delhi, Delhi</p>
+                        <button>Contact Supplier</button>
+                       </div>
+                    </div>
+                    <div class="box5">
+                        <div class="box5_img">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/5/SS/PX/GI/416338/298-40024-oxygen-cylinder-steel-664x664-250x250.jpg" alt="">
+                        </div>
+                       <div class="box5_text">
+                        <h1><a href="#">Aluminum Oxygen Cylinder</a></h1>
+                        <p class="box5_price">Rs 10500/ Cylinder</p>
+                        <p> ATCO Atmospheric And Speciality Gases Private Limited</p>
+                        <p class="address">Ahmedabad, Gujarat</p>
+                        <button>Contact Supplier</button>
+                       </div>
+                    </div>
+                    <div class="box5">
+                        <div class="box5_img">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/MR/KR/KG/1643231/medical-oxygen-cylinder-250x250.JPG" alt="">
+                        </div>
+                       <div class="box5_text">
+                        <h1><a href="#">Oxygen Gas</a></h1>
+                        <p class="box5_price">Rs 250/ Piece</p>
+                        <p> Deluxe Industrial Gases</p>
+                        <p class="address">Pune, Maharashtra</p>
+                        <p style="color: #fff;">paragraph</p>
+                        <button>Contact Supplier</button>
+                       </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <div id="footer">
+        <div class="footer1">
+            <div>
+                <p>We are here to help you!</p>
+            </div>
+            <div>
+                <div class="mobile">
+                    <p>Go Mobile</p>
+                    <i class="fi fi-brands-apple"></i>
+                    <i class="fi fi-sr-apple-whole"></i>
+                    <i class="fi fi-sr-smartphone"></i>
+                </div>
+                <div>
+                    Follow on us
+                    <div class="img1">
+                        <img src="https://flyclipart.com/thumb2/social-media-facebook-circle-icon-free-of-social-media-744746.png" width="45px" alt="">
+                    </div>
+                    <div class="img1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" width="30px" alt="">
+                    </div> 
+                    <div class="img1">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" width="30px" alt="">
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+       <div class="footer_content">
+        <ul>
+            <li>
+                <a href="">About Us</a>
+                <a href="">Join Sell</a>
+                <a href="">sucess Storis</a>
+                <a href="">Press Section</a>
+                <a href="">Advertise with us</a>
+                <a href="">jobs & Careers</a>
+            </li>
+            <li>
+                <a href="">Help</a>
+                <a href="">Feedback</a>
+                <a href="">Complaints</a>
+                <a href="">Custumber care</a>
+                <a href="">Contact us</a>
+                <a style="color: #9e9c9c;" href="">Contact us</a>
+            </li>
+            <li>
+                <a href="">Suppliers Tool Kit</a>
+                <a href="">Sell on IndiaMART</a>
+                <a href="">Latest BuyLead</a>
+                <a href="">Learning Center</a>
+                <a href="">Ship With IndiaMART</a>
+                <a style="color: #9e9c9c;" href="">Contact us</a>
+            </li>
+            <li>
+                <a href="">Buyers Tool Kit</a>
+                <a href="">Post Your Requirement</a>
+                <a href="">Products You Buy</a>
+                <a href="">Search Products & Suppliers</a>
+                <a href="">Pay With IndiaMART</a>
+                <a style="color: #9e9c9c;" href="">Contact us</a>
+            </li>
+            <li>
+                <a href="">Events</a>
+                <a href="">Trade Shows</a>
+                <a href="">Conferences</a>
+                <a href="">Events by Country</a>
+                <a style="color: #9e9c9c;" href="">Contact us</a>
+                <a style="color: #9e9c9c;" href="">Contact us</a>
+            </li>
+        </ul>
+       </div>
+       <div class="footer_last">
+        <p>Copyright © 1996-2022 IndiaMART InterMESH Ltd. All rights reserved.</p>
+        <p>Terms of Use - Privacy Policy - Link to Us</p>
+       </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+let left=1;
+let right=4;
+    function show(){
+        for(let i=left;i<=right;i++){
+            document.getElementById("c"+i).style.display="inline-block"
+        }
+       
+    }
+
+    function moveleft(){
+       if(left<=4&&right<=7){
+        document.getElementById("c"+left).style.display="none";
+        left+=1;
+        right+=1;
+        for(let i=left;i<=right;i++){
+            document.getElementById("c"+i).style.display="inline-block"
+        }
+       }
+       else{
+        return;
+       }
+    }
+
+
+    function moveright(){
+       if(left>=1&&right>=5){
+        document.getElementById("c"+right).style.display="none";
+        left-=1;
+        right-=1;
+        for(let i=left;i<=right;i++){
+            document.getElementById("c"+i).style.display="inline-block"
+        }
+       }
+       else{
+        return;
+       }
+    }
+</script>
