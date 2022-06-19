@@ -1,12 +1,12 @@
  
  
         #first{
-            background-color: white;
+            /* background-color: white; */
             width: 86%;
             height: 100%;
             margin-left: 112px;
             /* display: block; */
-            border: 5px solid red;
+            /* border: 5px solid red; */
         }
         h2{
             margin-left: 112px;
@@ -23,7 +23,7 @@
             
         }
         .main div{
-            background-color: white;
+            /* background-color: white; */
             display: grid;
             /* display: flex; */
             /* border: 1px solid teal; */
@@ -45,7 +45,6 @@
         .main h2:hover{
             color: red;
         }
-
         .main p{
             margin: 20px 17px;
             /* border: 1px solid teal; */
@@ -66,6 +65,8 @@
         #four:hover{
             box-shadow: none;
         }
+<<<<<<< HEAD
+=======
         .btn{
             display: inline-block;
             border: 1px solid #2E3192;
@@ -100,6 +101,7 @@
         .btn:hover::after{
             width: 100%;
         }
+>>>>>>> master
         #four>div{
             max-width: 200px;
             min-width: 200px;
@@ -1143,6 +1145,10 @@
     .under>a:hover{
         text-decoration: underline;
     }
+<<<<<<< HEAD
+    
+=======
     /* #abc:focus{
         color: white;
     } */
+>>>>>>> master

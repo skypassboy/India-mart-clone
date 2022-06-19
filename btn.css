@@ -1,0 +1,22 @@
+/* new btn */
+.cont{
+    display: grid;
+    border: 1px solid #2E3192;
+    color: #2E3192;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+    padding: 8px 8px 8px 8px;
+    border-radius: 4px;
+    transition: all 0.5s ease 0s; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float: right;
+    margin: 24px 15px 20px 15px;
+}
+.cont:hover{
+    box-shadow: inset 300px 0 0 0 #2E3192;
+    cursor: pointer;
+    color: white;
+}
