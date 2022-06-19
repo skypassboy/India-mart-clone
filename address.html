@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information-Checkout</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/zmz8Ybw/favicon-32x32.png">
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+    <div class="main1" id="main">
+        <div id="main_one">
+            <h1>Beige Solid Kurta</h1>
+            <p class="info">cart > Information > Shipping > Payment</p>
+            <div id="main_one_title">
+                <p>Contact Information</p>
+                <p>Already Have an Account ?<a href=""> Login</a></p>
+            </div>
+            <form action="#">
+            <input type="text" placeholder="Email" id="email" required><br>
+            <input type="checkbox" name="" id="checkbox1" required>
+            <label for="checkbox1">Email me with news and offers</label>
+            <h2>Shipping address</h2>
+            <select name="" id="coun" required>
+                <option value="all">Country/Region</option>
+                <option value="India">India</option>
+            </select>
+            <div id="name1">
+                <input id="fname" type="text" placeholder="First Name" required>
+                <input id="lname" type="text" placeholder="Last Name" required>
+            </div>
+            <div class="company_address">
+                <input type="text" placeholder="Company(Optional)">
+                <input id="add" type="text" placeholder="Address" required>
+                <input type="text" placeholder="Apartment , Suite ,etc." required> 
+            </div>
+            <div class="state">
+                <div>
+                    <input id="city" type="text" placeholder="City" required>
+                </div>
+                <div>
+                    <select name="" id="stste_box" required>
+                        <option value="">State</option>
+                        <option value="Andra Pradesh">Andra Pradesh</option>
+                        <option value="Arunchal Pradesh<">Arunchal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujurat">Gujurat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himanchal pradesh">Himanchal pradesh</option>
+                        <option value="Jharkhannd">Jharkhannd</option>
+                        <option value="karnataka">karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra">maharashtra</option>
+                        <option value="manipur">manipur</option>
+                        <option value="meghalaya">meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajashtan">Rajashtan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telengana">Telengana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+               <div>
+                <input id="pin" type="text" placeholder="Pincode" required maxlength="6"> 
+               </div>
+            </div>
+            <div class="phone">
+                <input id="num" type="number" placeholder="Phone" required maxlength="10">
+            </div>
+           <div class="checkbox2">
+            <input type="checkbox" name="" id="" required>
+            <label for="">Save this Information For Next time</label><br>
+            <input type="checkbox" name="" id="" required>
+            <label for="">Text me with news and offers</label>
+           </div>
+           <div class="btn">
+           <input id="shipping_button"  type="submit" value="Continue to Shopping">
+            <p><a href=""> Return to cart</a></p>
+           </div>
+        </form>
+           <hr>
+           <div class="footer">
+            <p>Refund Policy</p>
+            <p>Terms of services</p>
+           </div>
+        </div>
+        <div id="main_two">
+            <div id="image_details">
+
+            </div>
+            <hr>
+            <div class="input">
+                <input id="coupn" type="text" placeholder="Enter Coupn Code">
+                <input id="btn1" type="button" value="Apply">
+            </div>
+            <hr>
+            <div id="total">
+                <p>Subtotal</p>
+                <p id="price1">₹349.00</p>
+            </div>
+            <div id="shipping_charge">
+                <p>Shipping</p>
+                <p id="price3">Calculated at next step</p>
+            </div>
+            <hr>
+            <div id="last">
+                <p>Total</p>
+                <p id="price2"><span>INR</span>₹349.00</p>
+            </div>
+        </div>     
+    </div>
+    <div id="main2">
+        <h3 style="text-align: center" id="card-details">Card Details</h3>
+        <div id="num">
+            <input type="number" placeholder="Enter your card number" id="myNum" required maxlength="16">
+        </div>
+        <div id="name">
+            <input type="text" placeholder="Enter your name" id="myName">
+        </div>
+        <div id="cv">
+            <input type="text" placeholder="Expir Date" id="date" required >
+            <input type="number" placeholder="CVV" id="cvv" required>
+        </div>
+        <div>
+            <button id="btn2">PAY</button>
+        </div>
+        <div id="invoice">
+            <hr>
+            <div>
+                <p>Price</p>
+                <p id="price4"></p>
+            </div>
+            <div>
+                <p>Shipping</p>
+                <p id="price5_0"></p>
+            </div>
+            <div>
+                <p>Discount Coupon</p>
+                <p id="price6">0%</p>
+            </div>
+            <div>
+                <p>GST</p>
+                <p id="price5">18% (included)</p>
+            </div>
+            <div>
+                <p>TAX</p>
+                <p id="price7">04% (included)</p>
+            </div>
+            <hr>
+            <div>
+                <p>Total</p>
+                <p id="price8"></p>
+            </div>
+        </div>
+    </div>
+    <div id="main3">
+        <h2>Enter your OTP</h2>
+        <div id="otp">
+            <input type="text" maxlength="1" id="first">
+            <input type="text" maxlength="1" id="second">
+            <input type="text" maxlength="1" id="third">
+            <input type="text" maxlength="1" id="four">
+        </div>
+        <button id="btn4">Enter</button>
+        <p>Have not recived the OTP ?<a href="payments.html"> Resend</a></p>
+    </div>
+</body>
+<script src="address.js"></script>
+</html>

@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;;
+}
+input,select{
+    border: 1px solid #dad5d5;
+    border-radius: 8px;
+    margin: 10px 0px;
+    padding: 0px 5px;
+}
+input:focus,select:focus{
+    outline: none;
+}
+button{
+    border-radius: 8px;
+}
+
+#main{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main1#main.active{
+    background-color: #dad5d5; 
+    pointer-events: none;
+    user-select: none;
+ }
+#main_one{
+    width: 55%;
+    padding: 30px;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 80px;
+    line-height: 20px;
+}
+#main_one>h1{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 400;
+}
+.info{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+#main_one_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px; 
+}
+#main_one #email{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 5px;
+}
+#main_one>label{
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px; 
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 400;
+}
+#main_one select,.company_address>input,.phone>input{
+    width: 100%;
+    height: 45px;
+}
+#name1,.state{
+    display: flex;
+    justify-content: space-between;
+}
+#name1 input{
+    width: 48%;
+    height: 45px;
+}
+.state>div{
+    width: 30%;
+}
+.state>div>input{
+    width: 100%;
+    height: 42px;
+}
+#state_box{
+    width: 32%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.checkbox2{
+    font-size: 14px;
+    font-weight: 400;
+}
+#shipping_button{
+    padding: 12px 25px;
+    background-color: black;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 30px;
+    cursor: pointer;
+}
+hr{
+    width: 100%;
+    border: 0.2px solid rgb(197, 194, 194);
+    margin: auto;
+}
+.footer>p{
+    margin-right: 20px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.imagebox{
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+}
+#main_two{
+    width: 45%;
+    background-color:#fafafa;
+    padding: 30px;
+    padding-top: 80px;
+    padding-right: 100px;
+    padding-left: 70px;
+    border-left: 0.1px solid #dad5d5;
+}
+.imagebox>div:first-child::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0;
+}
+.imagebox>div:first-child{
+    width: 20%;
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+    background-color: #ffff;
+    border: 1px solid #eceaea;
+    border-radius: 5px;
+    position: relative;
+}
+.imagebox>div:first-child b{
+    position: absolute;
+   inset: 0;
+   display: block;
+   text-align: center;
+   transition: all 0.3s linear;
+}
+.imagebox>div:first-child b::before{
+    content: "1";
+    position: absolute;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-color: grey;
+    color: #ffff;
+    width: 20px;
+    height: 20px;
+    left: 86%;
+    top: -10%;
+}
+.imagebox>div:first-child>img{
+    display: block;
+    max-width: 75px;
+    max-height: 75px;
+    min-height: 75px;
+    margin: auto;
+    border-radius: 5px;
+}
+img{
+    vertical-align: middle;
+}
+.imagebox>div:nth-child(2){
+    width: 60%;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.imagebox>div:nth-child(3){
+    width: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-left: 16px;
+}
+.imagebox hr{
+    border: 0.1px solid rgb(214, 212, 212);
+    position: absolute;
+    width: 100%;
+    height: 0.1px;
+    margin-top: 125px;
+}
+.input{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.input>input:first-child{
+    width: 70%;
+    height: 45px;
+}
+.input>input:last-child{
+    width: 25%;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 400;
+}
+#total{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0px; 
+}
+#total>p:last-child{
+    font-size: 16px;
+    font-weight: 600;
+}
+#shipping_charge{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+}
+#last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+#last>p:first-child{
+    font-size: 18px;
+    font-weight: 400;
+}
+#last>p:last-child{
+    font-size: 20px;
+    font-weight: 600;
+}
+#last>p>span{
+    font-size: 12px;
+    font-weight: 12px;
+    margin-right: 10px;
+}
+#main2{
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    height: 600px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #ffff;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#main2.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#cv{
+    display: flex;
+    justify-content: space-between;
+}
+#cv>input{
+    width: 140px;
+    height: 28px;
+    font-size: 18px; 
+    border-radius: 0px;   
+}
+#main2 input{
+    border: none;
+    border-bottom: 1px solid black;
+    font-style: italic;
+    padding: 0px 5px;
+    border-radius: 0px;  
+}
+#num>input,#name>input{
+    width: 100%;
+    height: 28px;
+    font-size: 18px;
+    border-radius: 0px;  
+}
+#name>input{
+    margin: 20px 0px;
+    border-radius: 0px;  
+}
+input:focus{
+    outline: none;
+}
+#main2 button{
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    padding: 5px 30px;
+    background-color: rgb(177, 180, 177);
+    color: #ffff;
+    border: 1px solid rgb(171, 172, 171);
+    border-radius: 12px;
+}
+#card-details{
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+#main2 span{
+    font-style: italic;
+}
+#invoice hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#invoice>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    font-size: 14px;
+}
+#invoice>div:last-child>p{
+    font-size: 18px;
+    font-weight: 600;
+}
+#main3{
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #ffff;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#main3.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#main3 h2{
+    text-align: center;
+}
+#otp input{
+    width: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    text-align: center;
+    height: 40px;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 0px;
+}
+#otp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18%;
+}
+#main3 p{
+    text-align: center;
+    margin-top: 25px;
+}
+#main3 button{
+    display: block;
+    margin: auto;
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-size: 18px;
+    border: 1px solid grey;
+}

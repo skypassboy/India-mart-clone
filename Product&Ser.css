@@ -65,6 +65,43 @@
         #four:hover{
             box-shadow: none;
         }
+<<<<<<< HEAD
+=======
+        .btn{
+            display: inline-block;
+            border: 1px solid #2E3192;
+            color: #2E3192;
+            font-family: arial;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+            position: relative;
+            width: 120px;
+            padding: 10px 10px 10px 10px;
+            /* margin: 9px 15px 25px 15px; */
+            border-radius: 4px;
+            transition: all 0.3s ease 0s;
+            margin: 25px 15px 15px 15px;
+            float: right;
+        }
+        .btn::after{
+            background-color: #2E3192;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            z-index: -1;
+            transition: all 0.3s ease 0s;
+        }
+        .btn:hover{
+            color: white;
+        }
+        .btn:hover::after{
+            width: 100%;
+        }
+>>>>>>> master
         #four>div{
             max-width: 200px;
             min-width: 200px;
@@ -1108,4 +1145,10 @@
     .under>a:hover{
         text-decoration: underline;
     }
+<<<<<<< HEAD
     
+=======
+    /* #abc:focus{
+        color: white;
+    } */
+>>>>>>> master
