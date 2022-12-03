@@ -2,6 +2,8 @@
 
 Blue Heaven Cosmetics is the India's largest Online Shooping Platform.
 
+<a href="https://indiamartcloneteamflex.netlify.app/">Live Project<a/>
+
 ## Description
 
 Blue Heaven Cosmetics Private Limited is a Non-govt company, incorporated on 13 Dec, 2002. It's a private unlisted company and is classified as'company limited by shares'. Company's authorized capital stands at Rs 100.0 lakhs and has 26.449999% paid-up capital which is Rs 26.45 lakhs.
